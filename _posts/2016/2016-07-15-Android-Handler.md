@@ -89,7 +89,7 @@ Handler 一共有四个组件
 
 当新启动的线程发送消息时, 消息会发送到与之关联的 MessageQueue, 而 Handler 会不断地从 MessageQueue 中获取并处理消息. 这将导致 Handler 类中处理消息的方法被回调. 这个方法处于主线程, 从而更新 UI.
 
-![handler流程图.png](http://DONGChuan.github.io/assets/images/handler-process.png)
+![handler流程图.png](http://selfjt.github.io/assets/images/handler-process.png)
 
 既然 MessageQueue 是被 Looper 创建的, 那我们需不需要手动创建这个 Looper 对象呢?
 
