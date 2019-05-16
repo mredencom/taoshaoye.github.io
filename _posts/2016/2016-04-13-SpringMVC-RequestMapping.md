@@ -168,7 +168,7 @@ public void test(@CookieValue("foo") String valueFromCookie) {
 
 ## @RequestBody and @ResponseBody
 
-Check another note [SpringMVC-Http-Message-Converters](http://dongchuan.github.io/articles/2016/04/SpringMVC-Http-Message-Converters.html)
+Check another note [SpringMVC-Http-Message-Converters](http://selfjt.github.io/articles/2016/04/SpringMVC-Http-Message-Converters.html)
 
 ## Ref
 

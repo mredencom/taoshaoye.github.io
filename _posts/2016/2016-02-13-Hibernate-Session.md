@@ -93,7 +93,7 @@ Transaction tx = session.beginTransaction();
 
 User user = new User(); 
 
-user.setName("DONGChuan"); 
+user.setName("selfjt"); 
 user.setAge(26);
 
 session.save(user);

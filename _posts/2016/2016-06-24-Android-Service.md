@@ -7,7 +7,7 @@ tags: [android]
 
 Service, 四大组件之一, 是一个可以在后台执行长时间运行操作而不使用用户界面的应用组件. 比如播放音乐, 下载文件等.
 
-请注意, 虽然是后台执行任务, 但是 **Service 是运行在主线程的**! 如果要执行耗时任务, 最好手动创建新线程或者直接使用 `IntentService`. (参考 [IntentService 学习笔记](http://dongchuan.github.io/android/2016/06/14/Android-IntentService.html)).
+请注意, 虽然是后台执行任务, 但是 **Service 是运行在主线程的**! 如果要执行耗时任务, 最好手动创建新线程或者直接使用 `IntentService`. (参考 [IntentService 学习笔记](http://selfjt.github.io/android/2016/06/14/Android-IntentService.html)).
 
 ## 两种启动方式
 
@@ -24,7 +24,7 @@ Service, 四大组件之一, 是一个可以在后台执行长时间运行操作
 
 通过 startService 与 bindService 两种方式启动的 Service 的生命周期
 
-![service生命周期.jpg](http://DONGChuan.github.io/assets/images/service-life-cycle.jpg)
+![service生命周期.jpg](http://selfjt.github.io/assets/images/service-life-cycle.jpg)
 
 ## 启动服务
 

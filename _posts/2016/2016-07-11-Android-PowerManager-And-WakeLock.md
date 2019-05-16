@@ -47,7 +47,7 @@ tags: [android]
 <uses-permission android:name="android.permission.DEVICE_POWER"/>
 {% endhighlight %}
 
-在这之前, 请考虑能否使用 WakefulBroadcastReceiver (参考 [WakefulBroadcastReceiver 笔记](http://dongchuan.github.io/android/2016/06/17/Android-WakefulBroadcastReceiver.html)). 它会自动获得 PARTIAL_WAKE_LOCK 唤醒锁. 
+在这之前, 请考虑能否使用 WakefulBroadcastReceiver (参考 [WakefulBroadcastReceiver 笔记](http://selfjt.github.io/android/2016/06/17/Android-WakefulBroadcastReceiver.html)). 它会自动获得 PARTIAL_WAKE_LOCK 唤醒锁. 
 
 如果不符合情况则手动创建唤醒锁.
 

@@ -5,7 +5,7 @@ category: NodeJS
 tags: [nodejs]
 ---
 
-Quick note about Mongoose. [Code demo](https://github.com/DONGChuan/MongooseDemo)
+Quick note about Mongoose. [Code demo](https://github.com/selfjt)
 
 ## Default value in schema
 
@@ -77,13 +77,13 @@ var UserSchema = new mongoose.Schema({
 var User = mongoose.model('User', UserSchema);
 
 var user = new User({
-    blogurl: "dongchuan.github.io"
+    blogurl: "selfjt.github.io"
 });
 
 console.log('user: ', user);
 // output
 // user:  { _id: 570038ade8cb4c9023875290,
-//    blogurl: 'http://dongchuan.github.io',
+//    blogurl: 'http://selfjt.github.io',
 //    nickname: 'dchuan' }
 {% endhighlight %}
 
@@ -109,7 +109,7 @@ var UserSchema = new mongoose.Schema({
 var User = mongoose.model('User', UserSchema);
 
 var user = new User({
-  blogurl: 'dongchuan.github.io'
+  blogurl: 'selfjt.github.io'
 });
 
 user.save(function(err){

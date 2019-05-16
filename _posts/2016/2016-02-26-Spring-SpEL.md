@@ -5,7 +5,7 @@ category: Spring
 tags: [spring]
 ---
 
-Quick note after learning Spring SpEL. [Code Demo](https://github.com/DONGChuan/SpEL-Demo)
+Quick note after learning Spring SpEL. [Code Demo](https://github.com/selfjt)
 
 Spring Expression Language (SpEL), like OGNL, is a powerful expression language that supports querying and manipulating an object graph at runtime.
 
@@ -89,8 +89,8 @@ Like above hello world example. We could use variable by `setVariable()` functio
 ExpressionParser parser = new SpelExpressionParser();
 Expression expression = parser.parseExpression("Name = #newName");
 EvaluationContext context = new StandardEvaluationContext();
-context.setVariable("newName", "dongchuan"); // Set variable newName with value dongchuan
-System.out.println(expression.getValue(context)); // Name = dongchuan
+context.setVariable("newName", "selfjt"); // Set variable newName with value selfjt
+System.out.println(expression.getValue(context)); // Name = selfjt
 {% endhighlight %}
 
 ## Xml-based Expression

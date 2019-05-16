@@ -5,7 +5,7 @@ category: MyBatis
 tags: [mybatis, spring]
 ---
 
-Quick note about MyBatis with Spring. It's a summary from official site [mybatis-spring](http://www.mybatis.org/spring/). Code demo: [A simple SpingMVC + Mybatis Helloworld](https://github.com/DONGChuan/SpringMVC-Mybatis-Helloworld)
+Quick note about MyBatis with Spring. It's a summary from official site [mybatis-spring](http://www.mybatis.org/spring/). Code demo: [A simple SpingMVC + Mybatis Helloworld](https://github.com/selfjt)
 
 ## Requirement
 
@@ -33,11 +33,11 @@ Here, any kind of DataSource is allowed. For example, `org.springframework.jdbc.
 </bean>
 {% endhighlight %}
 
-> I got `CannotGetJdbcConnectionException` when coded my [SpingMVC + Mybatis Helloworld example](https://github.com/DONGChuan/SpringMVC-Mybatis-Helloworld). The solution is to add `?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT`. So set explicitly unicode and timezone.
+> I got `CannotGetJdbcConnectionException` when coded my [SpingMVC + Mybatis Helloworld example](https://github.com/selfjt). The solution is to add `?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT`. So set explicitly unicode and timezone.
 
 ## Setup SqlSessionFactory
 
-In previous note [MyBatis Basic](http://dongchuan.github.io/articles/2016/04/MyBatis-CRUD.html), we get `SqlSessionFactory` by `SqlSessionFactoryBuilder`:
+In previous note [MyBatis Basic](http://selfjt.github.io/articles/2016/04/MyBatis-CRUD.html), we get `SqlSessionFactory` by `SqlSessionFactoryBuilder`:
 
 {% highlight java %}
 String resource = "path/to/mybatis-config.xml";
@@ -103,7 +103,7 @@ public interface UserMapper {
 
 ## SqlSession
 
-In previous note [MyBatis Basic](http://dongchuan.github.io/articles/2016/04/MyBatis-CRUD.html), we get `SqlSession` from `SqlSessionFactory` and do transaction manually like following.
+In previous note [MyBatis Basic](http://selfjt.github.io/articles/2016/04/MyBatis-CRUD.html), we get `SqlSession` from `SqlSessionFactory` and do transaction manually like following.
 
 {% highlight java %}
 SqlSession session = sqlSessionFactory.openSession();
