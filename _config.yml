@@ -16,7 +16,7 @@ github_url: https://github.com/selfjt
 description: This is personnel website of Goroutine
 favicon: favicon.png # Image must be in assets/images
 
-url: http://selfjt.github.io # the base hostname & protocol for your site
+url: https://www.goroutine.me # the base hostname & protocol for your site
 
 ## Gem
 gems:
@@ -82,7 +82,7 @@ analytics :
 
 
 # For about.html. Fell free to create your own!
-skill_software_keywords: [Java, Go, Python, MySQL, Oracle, SQLite, PHP, Design Patterns]
+skill_software_keywords: [Java, Go, Python, MySQL, Oracle, SQLite, PHP]
 skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
 skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, MongoDB, Redis, PHP, Symfony, Boostrap]
 skill_mobile_app_keywords: [Android]
