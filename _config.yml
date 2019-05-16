@@ -6,22 +6,17 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Goroutine # ex. I m Chuan
-name: KING # ex. DONGChuan
-email: mreden@163.com
-location: My location # ex. Nice, France
-company: NO
-company_url: https://www.goroutine.me
-github_url: https://github.com/selfjt # ex. https://github.com/DONGChuan
-github_username: 个人学习# ex. DONGChuan
-description: 个人学习
+title: I am Chuan !
+name: DONGChuan
+email: dongchuan55@gmail.com
+location: Nice, France
+company: Gfi Informatique
+company_url: http://www.gfi.fr/en/
+github_url: https://github.com/DONGChuan
+description: This is personnel website of DONG Chuan
 favicon: favicon.png # Image must be in assets/images
-repository: https://github.com/selfjt/selfjt.github.io # ex. DONGChuan/DONGChuan.github.io
 
-# The base hostname & protocol for your site
-# For local test, please use http://localhost:4000
-# For production, use your github page url. ex. http://dongchuan.github.io
-url: http://localhost:4000
+url: http://dongchuan.github.io # the base hostname & protocol for your site
 
 ## Gem
 gems:
@@ -48,13 +43,13 @@ kramdown:
   enable_coderay: true
 
 # Disque
-disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
+disque: httpdongchuangithubio.disqus.com
 
 # Pagination
 paginate: 10
 paginate_path: 'page:num'
 
-# Navigation. If you do not like these modules, just remove them :D
+# Navigation
 navs:
   -
     href: /
@@ -83,7 +78,7 @@ side_bar_repo_limit: 5 # Number of repos to show
 analytics :
   provider : google
   google :
-      tracking_id : 'tracking_id'  # ex. UA-72165600-X
+      tracking_id : 'UA-72165600-1'
 
 
 # For about.html. Fell free to create your own!
