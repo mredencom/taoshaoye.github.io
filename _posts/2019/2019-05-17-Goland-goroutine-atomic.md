@@ -17,12 +17,12 @@ main 函数使用 StoreInt64 函数来安全地修改 shutdown 变量的值。�
 ### 创建变量
 {% highlight golang %}
 
-	var (
-		//定义一个shutdown是通知正在执行的goroutine停止工作标注
-		shutdown int64
-		//定义一wg4等待程序结束
-		wg4 sync.WaitGroup
-	)
+var (
+	//定义一个shutdown是通知正在执行的goroutine停止工作标注
+	shutdown int64
+	//定义一wg4等待程序结束
+	wg4 sync.WaitGroup
+)
 
 {% endhighlight %}
 
@@ -33,19 +33,19 @@ main 函数使用 StoreInt64 函数来安全地修改 shutdown 变量的值。�
 
 {% highlight golang %}
 
-	func doWorks(name string) {
-		defer wg4.Done()
-		for {
-			fmt.Printf("Doing %s Work\n", name)
-			time.Sleep(250 * time.Microsecond)
-			//判断是否要停止工作
-			if atomic.LoadInt64(&shutdown) == 1 {
-				fmt.Printf("Doing %s Down\n", name)
-				//跳出循环
-				break
-			}
+func doWorks(name string) {
+	defer wg4.Done()
+	for {
+		fmt.Printf("Doing %s Work\n", name)
+		time.Sleep(250 * time.Microsecond)
+		//判断是否要停止工作
+		if atomic.LoadInt64(&shutdown) == 1 {
+			fmt.Printf("Doing %s Down\n", name)
+			//跳出循环
+			break
 		}
 	}
+}
 
 {% endhighlight %}
 
@@ -53,20 +53,20 @@ main 函数使用 StoreInt64 函数来安全地修改 shutdown 变量的值。�
 
 {% highlight golang %}
 
-	func main() {
-		//建立两个goroutine 计数器2
-		wg4.Add(2)
-		//使用两个协程 goroutine
-		go doWorks("A")
-		go doWorks("B")
-		//给goroutine的运行时间
-		time.Sleep(1 * time.Second)
-		//该停止工作了,安全设置shutdown标志
-		fmt.Println("Shutdown Now")
-		atomic.StoreInt64(&shutdown, 1)
-		//等待goroutine结束
-		wg4.Wait()
-	}
+func main() {
+	//建立两个goroutine 计数器2
+	wg4.Add(2)
+	//使用两个协程 goroutine
+	go doWorks("A")
+	go doWorks("B")
+	//给goroutine的运行时间
+	time.Sleep(1 * time.Second)
+	//该停止工作了,安全设置shutdown标志
+	fmt.Println("Shutdown Now")
+	atomic.StoreInt64(&shutdown, 1)
+	//等待goroutine结束
+	wg4.Wait()
+}
 	
 {% endhighlight %}
 
