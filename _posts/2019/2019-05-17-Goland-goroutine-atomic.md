@@ -5,9 +5,14 @@ category: golang
 tags: [golang,goroutine]
 ---
 
-* 这里利用原子方法进行标记(StoreInt64)  然后LoadInt64取的标记值 , 这个一系列操作是安全访问的启动了两个 goroutine，并完成一些工作。在各自循环的每次迭代之后， goroutine 会使用LoadInt64 来检查 shutdown 变量的值。这个函数会安全地返回shutdown 变量的一个副本。如果这个副本的值为 1， goroutine 就会跳出循环并终止。
-* main 函数使用 StoreInt64 函数来安全地修改 shutdown 变量的值。如果哪个 doWork goroutine 试图在 main 函数调用 StoreInt64 的同时调用 LoadInt64 函数，那么原子函数会将这些调用互相同步，保证这些操作都是安全的，不会进入竞争状态
-## 一、代码
+go语言的的资源竞争问题.使用原子函数保证原子性操作.可以解决.
+
+## 一、概述
+
+这里利用原子方法进行标记(StoreInt64)  然后LoadInt64取的标记值 , 这个一系列操作是安全访问的启动了两个 goroutine，并完成一些工作。在各自循环的每次迭代之后， goroutine 会使用LoadInt64 来检查 shutdown 变量的值。这个函数会安全地返回shutdown 变量的一个副本。如果这个副本的值为 1， goroutine 就会跳出循环并终止。
+main 函数使用 StoreInt64 函数来安全地修改 shutdown 变量的值。如果哪个 doWork goroutine 试图在 main 函数调用 StoreInt64 的同时调用 LoadInt64 函数，那么原子函数会将这些调用互相同步，保证这些操作都是安全的，不会进入竞争状态
+
+## 二、代码
 
 ### 创建变量
 {% highlight golang %}
