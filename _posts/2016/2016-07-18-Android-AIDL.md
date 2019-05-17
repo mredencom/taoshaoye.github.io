@@ -39,7 +39,7 @@ interface IMyService {
 
 在服务端创建一个服务用来监听客户端的连接请求 (客户端绑定该服务).
 
-{% highlight java %}
+{% highlight java linenos  %}
 public class IRemoteService extends Service {
 
     // 客户端绑定服务时会执行 ServiceConnection.onServiceConnected 获得该 iBinder. 
