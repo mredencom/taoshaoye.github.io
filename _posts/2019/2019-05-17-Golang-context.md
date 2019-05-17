@@ -344,5 +344,5 @@ func main() {
 ## 参考
 
 * [源码文件](https://golang.org/src/context/context.go?s=8226:8290#L219)
-* [内容转载于:](https://github.com/watermelo/dailyTrans/blob/master/golang/context.md)
+* [内容转载于:https://github.com/watermelo/dailyTrans/blob/master/golang/context.md](https://github.com/watermelo/dailyTrans/blob/master/golang/context.md)
 	
