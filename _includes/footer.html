@@ -41,6 +41,15 @@
             ga('send', 'pageview');
 
         </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86221408-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '{{ site.analytics.google.tracking_id }}', { 'optimize_id': '{{ site.analytics.google.optimize_id }}'});
+        </script>
     </div>
     {% endif %}
 

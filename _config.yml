@@ -79,6 +79,7 @@ analytics :
   provider : google
   google :
       tracking_id : 'UA-86221408-3'
+      optimize_id : 'GTM-TR7MHHT'
 
 
 # For about.html. Fell free to create your own!
