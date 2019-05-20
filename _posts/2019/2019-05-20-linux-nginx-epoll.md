@@ -2,7 +2,7 @@
 layout: post
 title: Linux IO复用之epoll总结
 category: Linux
-tags: [Linux,nginx]
+tags: [Linux,Nginx]
 ---
 
 linux IO复用之epoll总结
