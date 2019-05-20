@@ -67,7 +67,7 @@ int epoll_wait(int epfd, struct epoll_event *events, int maxevents, int timeout)
 `epoll_wait`会阻塞等待IO事件，可以理解为从ready list里获取描述符。函数返回就绪描述的个数，并会将就绪的描述符存储到events参数中，
 通过timeout可以设置以毫秒为单位的超时时间，`-1`表示永不超时。
 
-## 边缘触发和水平触发
+## 三、边缘触发和水平触发
 
 关于边缘触发和水平触发的介绍有很多，这里就翻译一下man手册里的内容好了。
 
@@ -97,7 +97,7 @@ epoll提供两种触发机制：edge-triggered (ET) 和 level-triggered (LT)，�
 
 `/proc/sys/fs/epoll/max_user_watches` 中的配置限制了同一个用户在所有epoll实例中能监听的描述符的总数。
 
-## 使用边缘触发的例子
+## 四、使用边缘触发的例子
 
 因为水平触发和poll的使用方式区别不大，这里仅展示边缘触发的示例：
 
@@ -172,7 +172,7 @@ epoll提供两种触发机制：edge-triggered (ET) 和 level-triggered (LT)，�
 
 在边缘触发模式下，如果希望在事件到来时不立刻进行操作，而是等其他条件就绪后再进行read或write，这时可以同时注册`EPOLLIN|EPOLLOUT`事件以提高性能，而不是反复调用`epoll_ctl`通过`EPOLL_CTL_MOD`在`EPOLLIN`和`EPOLLOUT`之间来回切换，如果在水平模式下就不能这样做了，因为感兴趣的事件一旦就绪的事件就会持续发生，带来不必要的消耗。
 
-## 为什么epoll比poll更快
+## 五、为什么epoll比poll更快
 
 epoll的介绍里提到epoll比poll更快，根据网上的其他博客总结了以下几点原因：
 
@@ -183,11 +183,11 @@ epoll的介绍里提到epoll比poll更快，根据网上的其他博客总结了
 
 这里顺便提一下LT的实现，`epoll_wait`在返回就绪描述符前会检查描述符的触发类型，如果是水平触发并且描述符上有未处理的数据，则会将其加入刚才清空的ready list，这样下次调用`epoll_wait`时ready list仍会有该描述符。这也是LT和ET的表现的差别的实际原因。
 
-## 鸣谢
+## 六、鸣谢
 
 * 感谢原创作者
 
-## 转载
+## 七、转载
 
 * [转载](https://juejin.im/post/5cdaa67f518825691b4a5cc0)
 
