@@ -50,11 +50,7 @@
 
             gtag('config', '{{ site.analytics.google.tracking_id }}', { 'optimize_id': '{{ site.analytics.google.optimize_id }}'});
         </script>
-
-    </div>
-    {% endif %}
-    
-    <!--baidu 使用-->
+        <!--baidu 使用-->
         <script>
             (function(){
                 var bp = document.createElement('script');
@@ -69,5 +65,7 @@
                 s.parentNode.insertBefore(bp, s);
             })();
         </script>
+    </div>
+    {% endif %}
 
 </footer>
