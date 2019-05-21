@@ -31,7 +31,8 @@ You may assume that each input would have exactly one solution, and you may not 
 ## 代码示例
 
 ```golang
- //定义一个结果数组
+func twoSum(nums []int, target int) []int {
+  //定义一个结果数组
 	result := make([]int, 0)
 	m := make(map[int]int)
 	if nums == nil || len(nums) <= 1 {
