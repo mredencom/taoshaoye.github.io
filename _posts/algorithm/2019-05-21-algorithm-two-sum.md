@@ -31,24 +31,24 @@ You may assume that each input would have exactly one solution, and you may not 
 ## 代码示例
 
 ```golang
-func twoSum(nums []int, target int) []int {
-    res := make([]int, 0)
+ //定义一个结果数组
+	result := make([]int, 0)
 	m := make(map[int]int)
 	if nums == nil || len(nums) <= 1 {
-		return res
+		return result
 	}
 	for i := 0; i < len(nums); i++ {
 		num := nums[i]
-		val := target - num
-		result, ok := m[val]
+		r, ok := m[target-num]
 		if ok {
-			res = append(res, result, i)
-			return res
+			//如果成立写入slice
+			result = append(result, r, i)
+			return result
 		} else {
 			m[num] = i
 		}
 	}
-	return re    
+	return result
 }
 ```
 ## 记录自己学习算法.
