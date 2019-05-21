@@ -52,3 +52,4 @@ func twoSum(nums []int, target int) []int {
 }
 ```
 ## 记录自己学习算法.
+* 大家有什么更好的算法可以留言.
