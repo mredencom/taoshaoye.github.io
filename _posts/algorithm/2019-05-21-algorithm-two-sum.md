@@ -57,4 +57,6 @@ func twoSum(nums []int, target int) []int {
 
 * 大家有什么更好的算法可以留言.
 
-### [源码](https://github.com/selfjt/algorithm/blob/master/golang/twoSum.go)
+### 源码
+
+* [点击查看源码](https://github.com/selfjt/algorithm/blob/master/golang/twoSum.go)

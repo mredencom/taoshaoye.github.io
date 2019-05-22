@@ -74,4 +74,6 @@ func main() {
 
 * 大家有什么更好解题可以留言.
 
-### [源码](https://github.com/selfjt/algorithm/blob/master/golang/maxArea.go)
+### 源码
+
+* [点击查看源码](https://github.com/selfjt/algorithm/blob/master/golang/maxArea.go)
