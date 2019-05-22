@@ -28,7 +28,7 @@ gems:
 
 # Build settings
 markdown: kramdown
-highlighter: black
+highlighter: rouge
 lsi:         false
 excerpt_separator: "\n\n"
 
