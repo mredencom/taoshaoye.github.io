@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 算法<<移动零>>
+title: 移动零算法
 category: Algorithm
 tags: [Algorithm]
 ---
