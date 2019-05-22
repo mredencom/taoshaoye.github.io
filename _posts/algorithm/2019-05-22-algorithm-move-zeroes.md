@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 移动零
-category: 算法
-tags: [算法]
+category: Algorithm
+tags: [Algorithm]
 ---
 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
 
