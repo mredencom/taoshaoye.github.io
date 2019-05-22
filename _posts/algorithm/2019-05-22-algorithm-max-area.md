@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 算法<<盛最多水的容器>>
+title: 盛最多水的容器算法
 category: Algorithm
 tags: [Algorithm]
 ---
