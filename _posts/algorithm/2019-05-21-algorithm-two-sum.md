@@ -52,5 +52,9 @@ func twoSum(nums []int, target int) []int {
 	return result
 }
 ```
+
 ## 记录自己学习算法.
+
 * 大家有什么更好的算法可以留言.
+
+### [源码](https://github.com/selfjt/algorithm/blob/master/golang/twoSum.go)

@@ -70,4 +70,7 @@ func moveZeroes2(nums []int) []int {
 `执行用时 : 132 ms, 内存消耗 : 14.8 MB`
 
 ## 记录自己学习算法.
+
 * 大家有什么更好的算法可以留言.
+
+### [源码](https://github.com/selfjt/algorithm/blob/master/golang/moveZeroes.go)
