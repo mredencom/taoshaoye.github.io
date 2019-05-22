@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 两数之和
+title: 算法<<两数之和>>
 category: Algorithm
 tags: [Algorithm]
 ---
