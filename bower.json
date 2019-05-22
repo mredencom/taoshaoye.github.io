@@ -24,6 +24,7 @@
     "geopattern": "^1.2.3",
     "underscore": "^1.8.3",
     "primer-markdown": "^2.5.1",
-    "flag-icon-css": "^2.3.1"
+    "flag-icon-css": "^2.3.1",
+    "gitment":"^0.0.3"
   }
 }
