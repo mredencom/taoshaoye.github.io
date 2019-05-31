@@ -77,6 +77,7 @@ func (this *LinkedList) Print() {
 
 `测试代码`
 ```golang
+var l *LinkedList
 //测试 初始化数据
 func init() {
 	n5 := &ListNode{value: 5}
