@@ -28,7 +28,6 @@ type ListNode struct {
 	next  *ListNode
 	value interface{}
 }
-
 ```
 
 `单链表`
@@ -36,7 +35,6 @@ type ListNode struct {
 type LinkedList struct {
 	head *ListNode
 }
-
 ```
 
 `单链表反转`
@@ -98,13 +96,13 @@ func TestLinkedList_Reverse(t *testing.T) {
 ```
 
 `输出结果`
-`
+```
 === RUN   TestLinkedList_Reverse
 1<-2<-3<-4<-5
 5<-4<-3<-2<-1
 --- PASS: TestLinkedList_Reverse (0.00s)
 PASS
-`
+```
 
 
 
