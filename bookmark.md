@@ -98,3 +98,6 @@ menu: Bookmark
 
 ## Websites
 - [HTML5 Up](https://html5up.net/) - Site Template
+
+## Links
+- [ITECHZERO](https://note.itechzero.cn/) - ITECHZERO 分享是美德 亦是态度

@@ -78,7 +78,7 @@ navs:
     label: About
 
 # Sidebar to show popular repo
-side_bar_repo_limit: 5 # Number of repos to show
+side_bar_repo_limit: 9 # Number of repos to show
 
 # Google Analytics
 analytics :
@@ -90,7 +90,7 @@ analytics :
 
 
 # For about.html. Fell free to create your own!
-skill_software_keywords: [Java, Go, Python, MySQL, Oracle, SQLite, PHP, Linux, Nginx, Algorithm]
+skill_software_keywords: [Java, Go, Python, MySQL, Oracle, SQLite, PHP, Linux, Nginx, Algorithm, DataStructure]
 skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
 skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, MongoDB, Redis, PHP, Symfony, Boostrap]
 skill_mobile_app_keywords: [Android]
