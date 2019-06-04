@@ -206,6 +206,6 @@ func TestArray_Find(t *testing.T) {
 
 * [点击查看源码](https://github.com/selfjt/algorithm/blob/master/golang/array/array.go)
 
-* [点击查看测试源码](https://github.com/selfjt/algorithm/blob/master/golang/array/array.go)
+* [点击查看测试源码](https://github.com/selfjt/algorithm/blob/master/golang/array/array_test.go)
 
 * [喜欢可以star下](https://github.com/selfjt/algorithm)
