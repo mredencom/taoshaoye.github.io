@@ -6,15 +6,15 @@ tags: [DataStructure]
 ---
 数据结构中的数组基本操作,我这里是也是为了学习记录我自己的书写的代码过程.其中包含取数组的新建,新增元素,删除元素,取指定索引值,向元素尾部追加元素 等等!
 
-## 场景 
+## 1、 场景 
 
-### 中文描述
+### 1.1、 中文描述
 
 数据结构中的数组基本操作,我这里是也是为了学习记录我自己的书写的代码过程.其中包含取数组的新建,新增元素,删除元素,取指定索引值,向元素尾部追加元素 等等!
 
-## 代码示例
+## 2、 代码示例
 
-### 定义一个数组结构
+### 2.1、 定义一个数组结构
 
 ```golang
 //定义一个结构体
@@ -23,7 +23,7 @@ type Array struct {
 	length int   //长度
 }
 ```
-### 新建一个数组
+### 2.2、 新建一个数组
 
 ```golang
 // 我们这里做一个建立数组的方法
@@ -39,7 +39,7 @@ func NewArray(capacity uint) *Array {
 }
 ```
 
-### 取当前数组的长度
+### 2.3、 取当前数组的长度
 
 ```golang
 //取当前数组的长度
@@ -48,7 +48,7 @@ func (this *Array) Len() uint {
 }
 ```
 
-### 检查数组是否越界
+### 2.4、 检查数组是否越界
 
 ```golang
 //判断数组是否越界  true:越界  false:没有越界 n~n-1
@@ -61,7 +61,7 @@ func (this *Array) isIndexOutOfRange(index uint) bool {
 
 ```
 
-### 索引查找数组中的数据
+### 2.5、 索引查找数组中的数据
 
 ```golang
 //这个根据索引查找数组中的数据
@@ -73,7 +73,7 @@ func (this *Array) Find(index uint) (int, error) {
 }
 ```
 
-### 插入指定数组索引值
+### 2.6、 插入指定数组索引值
 
 ```golang
 //给指定的值插入到指定索引上. 返回错误
@@ -95,7 +95,7 @@ func (this *Array) Insert(index uint, v int) error {
 }
 ```
 
-### 追加元素到数组尾部
+### 2.7、 追加元素到数组尾部
 
 ```golang
 //追加元素到数组的尾部
@@ -104,7 +104,7 @@ func (this *Array) InsertToTail(v int) error {
 }
 ```
 
-### 删除指定索引上的值
+### 2.8、 删除指定索引上的值
 
 ```golang
 //删除指定索引上的值
@@ -125,7 +125,7 @@ func (this *Array) Delete(index uint) (int, error) {
 
 ```
 
-### 打印数组
+### 2.9、 打印数组
 
 ```golang
 //输出一个数组
@@ -139,7 +139,7 @@ func (this *Array) Print() {
 }
 ```
 
-## 测试源码
+## 3、 测试源码
 
 测试方法我上面都追加有测试的命令.可以测试使用
 
@@ -202,7 +202,7 @@ func TestArray_Find(t *testing.T) {
 ```
 
 
-## 源码
+## 4、 源码
 
 * [点击查看源码](https://github.com/selfjt/algorithm/blob/master/golang/array/array.go)
 
