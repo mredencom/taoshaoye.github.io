@@ -22,7 +22,6 @@ type ListNode struct {
 	next  *ListNode
 	value interface{}
 }
-
 ```
 ### 2.2、 链表的结构
 
