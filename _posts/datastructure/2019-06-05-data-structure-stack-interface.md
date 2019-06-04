@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 数据结构-栈操作
+title: 数据结构-栈操作接口定义
 category: DataStructure
 tags: [DataStructure]
 ---
