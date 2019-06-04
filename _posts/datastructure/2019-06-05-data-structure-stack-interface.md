@@ -33,7 +33,7 @@ type Stack interface {
 }
 ```
 
-## 4、 源码
+## 3、 源码
 
 * [点击查看源码](https://github.com/selfjt/algorithm/blob/master/golang/stack/StackInterface.go "栈操作接口")
 
