@@ -208,4 +208,4 @@ func TestArray_Find(t *testing.T) {
 
 * [点击查看测试源码](https://github.com/selfjt/algorithm/blob/master/golang/array/array_test.go "数组test")
 
-* [喜欢可以star下](https://github.com/selfjt/algorithm "star")
+* [喜欢可以star下::+1](https://github.com/selfjt/algorithm "star")
