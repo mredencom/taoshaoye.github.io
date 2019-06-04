@@ -285,8 +285,8 @@ func TestLinkedList_InsertToTail(t *testing.T) {
 
 ## 4、 源码
 
-* [点击查看源码](https://github.com/selfjt/algorithm/blob/master/golang/linkedlist/singlelinkedlist.go)
+* [点击查看源码](https://github.com/selfjt/algorithm/blob/master/golang/linkedlist/singlelinkedlist.go "单向链表")
 
-* [点击查看测试源码](https://github.com/selfjt/algorithm/blob/master/golang/linkedlist/singlelinkedlist_test.go)
+* [点击查看测试源码](https://github.com/selfjt/algorithm/blob/master/golang/linkedlist/singlelinkedlist_test.go "单向链表test")
 
-* [喜欢可以star下](https://github.com/selfjt/algorithm)
+* [喜欢可以star下](https://github.com/selfjt/algorithm "star")
