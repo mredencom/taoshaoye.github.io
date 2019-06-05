@@ -2,7 +2,9 @@
 
 .site-header{
     color: #fff;
-    background: #4183c4;
+    /*background: #4183c4;*/
+    background: #373d44;
+
 }
 
 .site-header #site-header-brand {
@@ -18,7 +20,8 @@
 }
 
 .jumbotron {
-    background: #4183c4;
+    /*background: #4183c4;*/
+    background: #171c21;
 }
 
 .site-header.site-header-nav-scrolled a {
