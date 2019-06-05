@@ -1,8 +1,8 @@
 ---
 layout: post
 title: PHP设计模式
-category: PHP
-tags: [PHP]
+category: php
+tags: [php]
 ---
 
 设计模式是反复出现问题的解决方案; **如何解决某些问题的指导方针**。它们不是可以插入应用程序并等待神奇发生的类，包或库。相反，这些是如何在某些情况下解决某些问题的指导原则。
