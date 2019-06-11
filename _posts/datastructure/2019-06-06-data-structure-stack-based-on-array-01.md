@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 数据结构-栈操作-实现栈基本操作
+title: 数据结构-栈操作-用数组实现栈基本操作
 category: DataStructure
 tags: [DataStructure]
 ---
