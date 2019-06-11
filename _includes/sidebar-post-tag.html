@@ -4,9 +4,9 @@
         {% for category in site.categories %}
         <li class="list-group-item">
             {{ category | first }}
-            <span class="badge"><a href="{{ post.url }}">{{ category[1].size }}</a></span>
+            <span class="badge">{{ category[1].size }}</span>
         </li>
-        
+
         {% endfor %}
 
         {% for post in category[1] %}
