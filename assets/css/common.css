@@ -17,8 +17,7 @@
     z-index: 103;
 
     color: #000;
-    /*background: #fff;*/
-    background: #373d44;
+    background: #fff;
 
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -28,8 +27,7 @@
 }
 
 .site-header #site-header-brand {
-    /*color: #2e2e2e;*/
-    color: #fff;
+    color: #2e2e2e;
     float: left;
 }
 
@@ -55,8 +53,7 @@
 }
 
 .site-header-nav-item {
-    /*color: #000;*/
-    color: #fff;
+    color: #000;
     display:inline-block;
     padding:10px;
     margin-left:1.25rem;
@@ -71,7 +68,6 @@
 .site-header.site-header-nav-scrolled {
     margin: 0;
     background-color: white;
-    color: #2e2e2e !important;
 
     -webkit-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
     -moz-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
