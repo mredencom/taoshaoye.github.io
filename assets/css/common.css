@@ -28,7 +28,8 @@
 }
 
 .site-header #site-header-brand {
-    color: #2e2e2e;
+    /*color: #2e2e2e;*/
+    color: #fff;
     float: left;
 }
 
@@ -54,7 +55,8 @@
 }
 
 .site-header-nav-item {
-    color: #000;
+    /*color: #000;*/
+    color: #fff;
     display:inline-block;
     padding:10px;
     margin-left:1.25rem;
@@ -69,6 +71,7 @@
 .site-header.site-header-nav-scrolled {
     margin: 0;
     background-color: white;
+    color: #2e2e2e !important;
 
     -webkit-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
     -moz-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
