@@ -21,8 +21,7 @@
 
 .jumbotron {
     /*background: #4183c4;*/
-    /*background: #171c21;*/
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…xsPSIjZGRkIiBvcGFjaXR5PSIwLjE0MTMzMzMzMzMzMzMzMzM0Ij48L2NpcmNsZT48L3N2Zz4=
+    background: #171c21;
 }
 
 .site-header.site-header-nav-scrolled a {
