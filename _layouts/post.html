@@ -9,7 +9,9 @@ css: ['sidebar-post-nav.css']
 
         {% if page.no-post-nav %}
         <div class="col-md-12 markdown-body">
-
+            {% if page.music-id %}
+                 {% include cloud-music.html %}
+            {% endif %} 
             {{ content }}
 
             <!-- Comments -->

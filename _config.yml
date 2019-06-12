@@ -88,6 +88,8 @@ analytics :
       optimize_id : 'GTM-TR7MHHT'
       google_ad_client: 'ca-pub-5784279524799575'
 
+music:
+  music-id: 94689
 
 # For about.html. Fell free to create your own!
 skill_software_keywords: [Java, Go, Python, MySQL, Oracle, SQLite, php, Linux, Nginx, Algorithm, DataStructure]
