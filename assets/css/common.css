@@ -116,6 +116,7 @@
     position: absolute;
     left: 50%;
     color: #ccc;
+    margin-top: -35px;
 }
 
 .site-footer .octicon-mark-github:hover {
