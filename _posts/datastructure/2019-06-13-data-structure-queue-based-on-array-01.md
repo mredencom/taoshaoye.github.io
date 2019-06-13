@@ -24,7 +24,6 @@ type ArrayQueue struct {
 	head     int           //头节点
 	tail     int           //尾部节点
 }
-
 ```
 ### 2.2、 新建一个数组队列
 
