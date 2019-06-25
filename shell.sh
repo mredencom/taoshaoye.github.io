@@ -1,3 +1,3 @@
 git add ./
-git commit -m "xu"
+git commit -am "su"
 git push origin master
