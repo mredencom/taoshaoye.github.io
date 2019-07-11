@@ -1,0 +1,27 @@
+<section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>{{ page.title }}</h1>
+            <span class="meta-info">
+                {% if page.subtitle %}
+                    {{ page.subtitle }}
+                {% endif %}
+                {% if page.date %}
+                <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d" }}
+                {% endif %}
+            </span>
+            <span id="busuanzi_container_page_pv octicon octicon-organization">
+                本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </span>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>

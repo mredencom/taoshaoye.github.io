@@ -1,0 +1,24 @@
+<h3 class="sidebar-title">博客分类</h3>
+<div id="blog-categories">
+    <ul class="list-group">
+        {% for category in site.categories %}
+        <li class="list-group-item">
+            {{ category | first }}
+            <span class="badge">{{ category[1].size }}</span>
+        </li>
+
+        {% endfor %}
+
+        {% for post in category[1] %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $("#blog-categories li").css('text-transform','capitalize')
+    });
+
+</script>
