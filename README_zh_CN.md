@@ -1,6 +1,6 @@
 # 博客地址
 
-<https://bit-ranger.github.io/blog/>
+<https://goroutine.me/>
 
 # 必改内容
 

@@ -25,13 +25,14 @@ defaults:
 
 
 
-title: "bit-ranger"
+title: "Goroutine"
 email: mreden@163.com
 description: ""
 github:
   username: bit-ranger
 swiftype:
-  searchId: iXZyPokVfxFaBTvi64Y6
+  #searchId: iXZyPokVfxFaBTvi64Y6
+  searchId: 8XGi5SV983sc19tc72We
 gitment:
     repo: https://goroutine.me
     client_id: cf3b009d23ac36f71836
