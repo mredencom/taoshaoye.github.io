@@ -3,7 +3,6 @@
 
 SS客户端
 https://shadowsocks.org/en/download/clients.html 
-Free SS 
 免费SS账号所有数据均来自互联网，更新时间：2019-07-27 23:58:52   
 
 账号 	端口 	密码 	加密方式 	更新时间 	国家
