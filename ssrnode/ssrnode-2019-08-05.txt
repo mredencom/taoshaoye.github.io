@@ -1,4 +1,4 @@
-来自免费翻墙网https://www.freefq.com的提醒：所有账号、节点或服务器均源自国际互联网，全部由其他网站分享，并非由免费翻墙网提供。本站不能保证其安全性与稳定性，随时都有可能失效，敬请理解！ 
+来自免费翻墙网https://www.goroutine.me的提醒：所有账号、节点或服务器均源自国际互联网，全部由其他网站分享，并非由免费翻墙网提供。本站不能保证其安全性与稳定性，随时都有可能失效，敬请理解！ 
 
 SS客户端
 https://shadowsocks.org/en/download/clients.html 
@@ -96,9 +96,8 @@ Free SS
 45.77.234.231 	8099 	eIW0Dnk69454e6nSwuspv9DmS201tQ0D 	aes-256-cfb 	13:07:14 	AU
 211.75.79.233 	16505 	QozzuzLs2W32 	aes-256-cfb 	13:07:20 	TW
 
-ssr安卓客户端apk下载https://www.freefq.com/sj/2017/12/20/shadowsocksr-android.html安装后，可直接点击下面的ssr节点链接实现翻墙，windows客户端则要复制该ssr节点链接后使用ssr右键→剪贴板批量导入ssr://链接。 
+可直接点击下面的ssr节点链接实现翻墙，windows客户端则要复制该ssr节点链接后使用ssr右键→剪贴板批量导入ssr://链接。 
 
-Free SSR 免费SSR账号 
 所有数据均来自互联网，更新时间：2019-08-05 13:17:29 
 
 <th align="center">ssr链接</th>
