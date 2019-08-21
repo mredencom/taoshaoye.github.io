@@ -4,6 +4,9 @@ title: 反转链表
 category: Algorithm
 tags: [Algorithm]
 ---
+* content
+{:toc}
+
 反转一个单链表。
 
 ## 场景 

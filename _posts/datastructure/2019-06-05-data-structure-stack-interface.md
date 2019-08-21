@@ -4,6 +4,9 @@ title: 数据结构-栈操作接口定义
 category: DataStructure
 tags: [DataStructure]
 ---
+* content
+{:toc}
+
 数据结构中的栈基本操作,我这里是也是为了学习记录我自己的书写的代码过程.其中包含取栈的新建,新增元素,删除元素,取指定索引值,向元素尾部追加元素 等等!
 
 ## 1、 场景 
