@@ -5,6 +5,9 @@ category: Spring
 tags: [spring]
 ---
 
+* content
+{:toc}
+
 This is quick note after learning Spring autowire.
 
 ## Autowire

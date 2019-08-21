@@ -4,7 +4,8 @@ title: Struts OGNL
 category: Struts
 tags: [struts]
 ---
-
+* content
+{:toc}
 OGNL stands for [Object Graph Navigation Language](http://commons.apache.org/proper/commons-ognl/).
 
 It's an expression language for getting/setting properties of Java objects and other extra functions. It works as a binding between GUI elements or UI components to model objects.

@@ -4,6 +4,9 @@ title: Spring SpEL
 category: Spring
 tags: [spring]
 ---
+* content
+{:toc}
+
 
 Quick note after learning Spring SpEL. [Code Demo](https://github.com/selfjt)
 

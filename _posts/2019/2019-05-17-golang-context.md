@@ -5,6 +5,9 @@ category: golang
 tags: [golang,context]
 ---
 
+* content
+{:toc}
+
 在刚刚过去的 2019 gopher china 大会上 context 概念被多次提起，包括很多框架的源码也大量运用了。看得出来 context 在 golang的世界中是一个非常重要的知识点，所以有必要对 context 有一个基本的使用和认知。官方文档解释和示例都比较详细正规，本着学习的态度翻译一遍加深理解。 
 
 

@@ -4,6 +4,8 @@ title: Hibernate Session
 category: Hibernate
 tags: [hibernate]
 ---
+* content
+{:toc}
 
 Session interface is a **single threaded** object between Java application and the persistence layer. Session opens a single database connection when it is created, and holds onto it until the session is closed. It is mainly to **offer CRUD operations on the persistent object** which is loaded by Hibernate from the database.
 

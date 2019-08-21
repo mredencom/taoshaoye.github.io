@@ -4,6 +4,8 @@ title: SpringMVC RequestMapping
 category: SpringMVC
 tags: [spring, springmvc]
 ---
+* content
+{:toc}
 
 Quick note about request mapping annotations in SpringMVC controller
 

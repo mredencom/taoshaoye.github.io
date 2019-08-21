@@ -5,6 +5,9 @@ category: golang
 tags: [golang,goroutine]
 ---
 
+* content
+{:toc}
+
 go语言的的资源竞争问题.使用原子函数保证原子性操作.可以解决.
 
 ## 一、概述

@@ -4,6 +4,8 @@ title: AngularJS Form
 category: AngularJS
 tags: [angularjs]
 ---
+* content
+{:toc}
 
 AngularJS provides a small and well-defined set of constructs that make standard form-based operations easier. For a form, we should consider three points:
 

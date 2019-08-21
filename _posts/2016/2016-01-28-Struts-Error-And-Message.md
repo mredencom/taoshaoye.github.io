@@ -4,6 +4,8 @@ title: Struts errors and messages from action
 category: Struts
 tags: [struts]
 ---
+* content
+{:toc}
 
 I had a problem today when developing a login system to learn struts. How to transfer easily the error and messages from action, and show them on jsp pages.
 

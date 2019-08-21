@@ -4,6 +4,8 @@ title: NodeJS Mongoose
 category: NodeJS
 tags: [nodejs]
 ---
+* content
+{:toc}
 
 Quick note about Mongoose. [Code demo](https://github.com/selfjt)
 

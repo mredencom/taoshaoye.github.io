@@ -4,6 +4,8 @@ title: MyBatis config and CRUD
 category: MyBatis
 tags: [mybatis]
 ---
+* content
+{:toc}
 
 Quick note about MyBatis configuration and CRUD.
 
