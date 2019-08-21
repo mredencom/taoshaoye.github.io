@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 初识golang中Context
-category: golang
+categories: golang
 tags: [golang,context]
 ---
 

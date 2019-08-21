@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 数据结构-链表操作-单向链表
-category: DataStructure
+categories: DataStructure
 tags: [DataStructure]
 ---
 * content

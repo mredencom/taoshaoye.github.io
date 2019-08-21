@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 反转链表
-category: Algorithm
+categories: Algorithm
 tags: [Algorithm]
 ---
 * content

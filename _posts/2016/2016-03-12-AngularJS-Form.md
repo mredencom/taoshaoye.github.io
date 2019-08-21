@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AngularJS Form
-category: AngularJS
+categories: AngularJS
 tags: [angularjs]
 ---
 * content

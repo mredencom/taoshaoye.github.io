@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP设计模式
-category: php
+categories: php
 tags: [php]
 ---
 
@@ -494,12 +494,12 @@ $burger = (new BurgerBuilder(14))
 class Sheep
 {
     protected $name;
-    protected $category;
+    protected $categories;
 
-    public function __construct(string $name, string $category = 'Mountain Sheep')
+    public function __construct(string $name, string $categories = 'Mountain Sheep')
     {
         $this->name = $name;
-        $this->category = $category;
+        $this->categories = $categories;
     }
 
     public function setName(string $name)
@@ -512,14 +512,14 @@ class Sheep
         return $this->name;
     }
 
-    public function setCategory(string $category)
+    public function setcategories(string $categories)
     {
-        $this->category = $category;
+        $this->categories = $categories;
     }
 
-    public function getCategory()
+    public function getcategories()
     {
-        return $this->category;
+        return $this->categories;
     }
 }
 ```
@@ -529,13 +529,13 @@ class Sheep
 ```php
 $original = new Sheep('Jolly');
 echo $original->getName(); // Jolly
-echo $original->getCategory(); // Mountain Sheep
+echo $original->getcategories(); // Mountain Sheep
 
 // Clone and modify what is required
 $cloned = clone $original;
 $cloned->setName('Dolly');
 echo $cloned->getName(); // Dolly
-echo $cloned->getCategory(); // Mountain sheep
+echo $cloned->getcategories(); // Mountain sheep
 ```
 
 您也可以使用魔术方法`__clone`来修改克隆行为。

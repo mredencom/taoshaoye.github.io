@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 数组、链表、Hash的优缺点
-category: DataStructure
+categories: DataStructure
 tags: [DataStructure]
 ---
 

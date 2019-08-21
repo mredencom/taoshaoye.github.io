@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hibernate Session
-category: Hibernate
+categories: Hibernate
 tags: [hibernate]
 ---
 * content

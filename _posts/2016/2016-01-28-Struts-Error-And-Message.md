@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Struts errors and messages from action
-category: Struts
+categories: Struts
 tags: [struts]
 ---
 * content

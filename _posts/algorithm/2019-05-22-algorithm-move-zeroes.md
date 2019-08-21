@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 移动零算法
-category: Algorithm
+categories: Algorithm
 tags: [Algorithm]
 ---
 * content

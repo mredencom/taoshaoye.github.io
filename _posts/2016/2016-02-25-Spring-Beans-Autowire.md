@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring Beans Autowire
-category: Spring
+categories: Spring
 tags: [spring]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 数据结构-队列操作-用数组实现队列基本操作
-category: DataStructure
+categories: DataStructure
 tags: [DataStructure]
 ---
 * content

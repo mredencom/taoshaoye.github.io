@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 数据结构-数组操作
-category: DataStructure
+categories: DataStructure
 tags: [DataStructure]
 ---
 * content

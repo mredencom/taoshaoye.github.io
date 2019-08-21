@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Struts OGNL
-category: Struts
+categories: Struts
 tags: [struts]
 ---
 * content

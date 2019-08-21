@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 数据结构-栈操作接口定义
-category: DataStructure
+categories: DataStructure
 tags: [DataStructure]
 ---
 * content

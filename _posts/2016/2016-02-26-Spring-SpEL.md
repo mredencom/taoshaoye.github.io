@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring SpEL
-category: Spring
+categories: Spring
 tags: [spring]
 ---
 * content
