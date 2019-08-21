@@ -4,7 +4,8 @@ title: RxBinding 学习笔记
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 RxJava binding APIs for Android's UI widgets. 学习的是 [JakeWharton 的版本](https://github.com/JakeWharton/RxBinding). 另外还有用于 mvvm 的 [ogaclejapan 版本](https://github.com/ogaclejapan/RxBinding).
 
 RxBinding 是 RxAndroid 中处理控件异步调用的方式. 通过绑定组件, 异步获取事件, 并进行处理. 编码风格非常优雅. 不需要去添加各种 listener 的匿名方法.

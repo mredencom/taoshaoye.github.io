@@ -4,7 +4,8 @@ title: IntentService 学习笔记
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 `IntentService` 是用来处理异步 (asynchronous) 请求的 `Service` 的子类. 但是是通过创建一个独立的[工作者线程 (worker thread)](http://www.ibm.com/developerworks/library/j-jtp0730/) 来完成工作. 并且在完成工作后自动关闭服务.
 
 ## 什么时候用?

@@ -4,7 +4,8 @@ title: Java Static Blocks Loading Order
 category: java
 tags: [java]
 ---
-
+* content
+{:toc}
 ## Java Static Blocks Loading Order
 
 ### Main Points

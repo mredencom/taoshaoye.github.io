@@ -4,7 +4,8 @@ title: Android Shape Drawable
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 Quick note about learning Android Shape Drawable. It is an XML file defining a geometric shape, including colors and gradients.
 
 ## Shape

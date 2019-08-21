@@ -4,7 +4,8 @@ title: AIDL 学习笔记
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 AIDL 全称 **Android Interface Definition Language**. 主要用来处理进程间通信 (IPC), 也就是两个安卓应用程序之间的通信. 
 
 > 在安卓平台上, 一个进程通常不能访问另外一个进程的内存空间. 

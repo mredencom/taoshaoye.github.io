@@ -4,7 +4,8 @@ title: Android DragViewHelper
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 Quick note about learning ViewDragHelper from [ViewDragHelper tutorial
 ](https://newfivefour.com/android-viewdraghelper-example-tutorial.html) and [ViewDragHelper完全解析 自定义ViewGroup神器](http://blog.csdn.net/lmj623565791/article/details/46858663).
 

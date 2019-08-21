@@ -4,7 +4,8 @@ title: Singleton Pattern
 category: design pattern
 tags: [java, design pattern]
 ---
-
+* content
+{:toc}
 ## Singleton
 
 It ensures **only one instance for a class**. More detail, it involves one class which is responsible to instantiate itself, to make sure it creates only one instance and, in the same time, it provides a global point of access to that instance. 

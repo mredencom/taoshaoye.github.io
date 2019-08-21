@@ -4,7 +4,8 @@ title: WakefulBroadcastReceiver 学习笔记
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 [WakefulBroadcastReceiver](https://developer.android.com/reference/android/support/v4/content/WakefulBroadcastReceiver.html) 是一种特殊的广播接收器. 它可以自动创建和管理唤醒锁 `PARTIAL_WAKE_LOCK` 来执行任务. 确保耗时任务执行完毕之前设备不会休眠.
 
 `WakefulBroadcastReceiver` 收到广播后一般会启动 `Service` (通常用 `IntentService` 来处理耗时任务), 同时确保设备在整个 `Service` 执行过程中保持唤醒状态. 不然的话, 对于耗时任务, 设备可能在你完成任务之前就休眠了.

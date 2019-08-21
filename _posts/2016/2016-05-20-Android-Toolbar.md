@@ -4,7 +4,8 @@ title: Android Toolbar
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 Quick note about learning [Training : Adding the App Bar](https://developer.android.com/training/appbar/index.html)
 
 Android introduces a new Toolbar widget. It is a generalization of the Action Bar pattern that gives us much more control and flexibility. ActionBar now is considered a special kind of Toolbar.

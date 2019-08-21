@@ -4,7 +4,8 @@ title: JDBC Guide
 category: jdbc
 tags: [java, jdbc]
 ---
-
+* content
+{:toc}
 JDBC stands for **Java Database Connectivity**. It is a standard Java API for database-independent connectivity between the Java programming language and a wide range of databases.
 
 It includes APIs for the tasks mentioned below:

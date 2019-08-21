@@ -4,7 +4,8 @@ title: Android Parcelable Interface
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 ## Parcelable Interface
 
 Interface for classes whose instances can be written to and restored from a Parcel. 

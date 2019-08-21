@@ -4,7 +4,8 @@ title: CSS Animation
 category: CSS
 tags: [css]
 ---
-
+* content
+{:toc}
 Quick note about CSS animation. 
 
 ## CSS Animation

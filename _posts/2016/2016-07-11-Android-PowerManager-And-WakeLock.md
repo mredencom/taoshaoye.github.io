@@ -4,7 +4,8 @@ title: PowerManager 与 WakeLock
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 [PowerManager](https://developer.android.com/reference/android/os/PowerManager.html#goToSleep(long)) 用来控制设备的电源状态. 而[PowerManager.WakeLock](https://developer.android.com/reference/android/os/PowerManager.WakeLock.html) 也称作唤醒锁, 是一种保持 CPU 运转防止设备休眠的方式. 
 
 我们经常需要应用保持高亮, 比如看小说. 或者即使屏幕关闭后台也能保持运行, 比如播放MP3. 这里就需要使用 PowerManager 的 WakeLock 机制.

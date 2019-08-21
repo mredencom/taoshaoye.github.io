@@ -4,7 +4,8 @@ title: Android Object Animator
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 ## Object Animator
 
 ### Why use Animator instead of Animation?

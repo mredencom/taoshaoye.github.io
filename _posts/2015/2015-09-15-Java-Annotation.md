@@ -4,7 +4,8 @@ title: Java Annotation
 category: java
 tags: [java]
 ---
-
+* content
+{:toc}
 Annotations is a form of **metadata** which provide data about a program that is not part of the program itself. Annotations have **no direct effect on the operation of the code they annotate**.
 
 Annotations have a number of uses, among them:

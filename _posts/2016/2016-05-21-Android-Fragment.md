@@ -4,7 +4,8 @@ title: Android Fragment
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 Quick note about learning [Building a Dynamic UI with Fragments](https://developer.android.com/training/basics/fragments/index.html)
 
 ## Fragment 

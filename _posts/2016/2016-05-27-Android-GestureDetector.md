@@ -4,7 +4,8 @@ title: Android GestureDetector
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 Quick note about learning `GestureDetector` and `ScaleGestureDetector`.
 
 ## GestureDetector

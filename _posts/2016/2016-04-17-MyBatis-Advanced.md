@@ -4,7 +4,8 @@ title: MyBatis association collection and discriminator
 category: MyBatis
 tags: [mybatis]
 ---
-
+* content
+{:toc}
 Quick note about MyBatis association, collection and discriminator.
 
 ## association

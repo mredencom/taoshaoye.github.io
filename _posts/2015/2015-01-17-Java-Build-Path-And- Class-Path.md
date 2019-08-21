@@ -4,7 +4,8 @@ title: Build Path and Class Path
 category: java
 tags: [java]
 ---
-
+* content
+{:toc}
 ## Build Path and Class Path
 
 * 'BUILDPATH' is for **building** your application. It is used to find the dependencies needed to build your project at **compile time**.

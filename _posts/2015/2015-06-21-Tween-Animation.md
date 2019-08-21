@@ -4,7 +4,8 @@ title: Android Tween Animation
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 ## Tween Animation
 
 Tween Animation is one kind of animation that we only need to set the start and the end. It will supply the lack between the start and the end. It is why we called **tween** here.

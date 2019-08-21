@@ -4,7 +4,8 @@ title: Service 学习笔记
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 Service, 四大组件之一, 是一个可以在后台执行长时间运行操作而不使用用户界面的应用组件. 比如播放音乐, 下载文件等.
 
 请注意, 虽然是后台执行任务, 但是 **Service 是运行在主线程的**! 如果要执行耗时任务, 最好手动创建新线程或者直接使用 `IntentService`. (参考 [IntentService 学习笔记](http://selfjt.github.io/android/2016/06/14/Android-IntentService.html)).

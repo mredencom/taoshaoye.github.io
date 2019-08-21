@@ -4,7 +4,8 @@ title: Android PendingIntent
 category: android
 tags: [android]
 ---
-
+* content
+{:toc}
 Quick note about learning PendingIntent.
 
 ## PendingIntent

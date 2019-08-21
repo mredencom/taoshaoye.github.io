@@ -4,7 +4,8 @@ title: MySQL Index
 category: MySQL
 tags: [mysql]
 ---
-
+* content
+{:toc}
 Quick note about MySQL Index.
 
 ## Why Index
