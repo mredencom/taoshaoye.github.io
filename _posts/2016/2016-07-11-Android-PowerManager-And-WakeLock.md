@@ -2,7 +2,7 @@
 layout: post
 title: PowerManager 与 WakeLock
 categories: android
-tags: [android]
+tags: android
 ---
 * content
 {:toc}

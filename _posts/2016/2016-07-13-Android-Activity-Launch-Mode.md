@@ -2,7 +2,7 @@
 layout: post
 title: Activity 启动模式
 categories: android
-tags: [android]
+tags: android
 ---
 * content
 {:toc}

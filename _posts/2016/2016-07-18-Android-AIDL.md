@@ -2,7 +2,7 @@
 layout: post
 title: AIDL 学习笔记
 categories: android
-tags: [android]
+tags: android
 ---
 * content
 {:toc}

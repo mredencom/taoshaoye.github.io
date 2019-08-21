@@ -2,10 +2,11 @@
 layout: post
 title: Android ListActivity
 categories: android
-tags: [android]
+tags: android
 ---
 * content
 {:toc}
+
 `ListActivity` is to simplify the handling of `ListView`. It extends `Activity` and provides simplified handling of lists.
 
 ## Difference with `Activity`

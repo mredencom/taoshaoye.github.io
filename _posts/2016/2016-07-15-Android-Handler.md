@@ -2,7 +2,7 @@
 layout: post
 title: Handler 小结
 categories: android
-tags: [android]
+tags: android
 ---
 * content
 {:toc}

@@ -2,7 +2,7 @@
 layout: post
 title: Service 学习笔记
 categories: android
-tags: [android]
+tags: android
 ---
 * content
 {:toc}
