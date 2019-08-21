@@ -2,7 +2,7 @@
 layout: post
 title: 两数之和算法
 categories: Algorithm
-tags: [Algorithm]
+tags: Algorithm
 ---
 * content
 {:toc}

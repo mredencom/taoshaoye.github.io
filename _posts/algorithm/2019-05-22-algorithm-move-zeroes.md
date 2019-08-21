@@ -2,7 +2,7 @@
 layout: post
 title: 移动零算法
 categories: Algorithm
-tags: [Algorithm]
+tags: Algorithm
 ---
 * content
 {:toc}

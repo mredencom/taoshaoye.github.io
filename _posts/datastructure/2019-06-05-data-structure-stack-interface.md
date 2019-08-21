@@ -2,7 +2,7 @@
 layout: post
 title: 数据结构-栈操作接口定义
 categories: DataStructure
-tags: [DataStructure]
+tags: DataStructure
 ---
 * content
 {:toc}

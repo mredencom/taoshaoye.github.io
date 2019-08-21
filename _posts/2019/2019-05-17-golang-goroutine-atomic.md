@@ -2,7 +2,7 @@
 layout: post
 title: 初识golang资源竞争
 categories: golang
-tags: [golang,goroutine]
+tags: golang goroutine
 ---
 
 * content

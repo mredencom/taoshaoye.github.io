@@ -2,7 +2,7 @@
 layout: post
 title: 数据结构-队列操作-用数组实现队列基本操作
 categories: DataStructure
-tags: [DataStructure]
+tags: DataStructure
 ---
 * content
 {:toc}

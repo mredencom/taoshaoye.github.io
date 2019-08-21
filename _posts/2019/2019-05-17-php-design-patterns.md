@@ -2,7 +2,7 @@
 layout: post
 title: PHP设计模式
 categories: php
-tags: [php]
+tags: php
 ---
 
 * content

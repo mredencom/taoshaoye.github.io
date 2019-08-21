@@ -2,7 +2,7 @@
 layout: post
 title: 数据结构-栈操作-用链表实现栈基本操作
 categories: DataStructure
-tags: [DataStructure]
+tags: DataStructure
 ---
 * content
 {:toc}

@@ -2,7 +2,7 @@
 layout: post
 title: 反转链表
 categories: Algorithm
-tags: [Algorithm]
+tags: Algorithm
 ---
 * content
 {:toc}

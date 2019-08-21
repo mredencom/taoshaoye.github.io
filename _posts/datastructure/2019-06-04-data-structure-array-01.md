@@ -2,7 +2,7 @@
 layout: post
 title: 数据结构-数组操作
 categories: DataStructure
-tags: [DataStructure]
+tags: DataStructure
 ---
 * content
 {:toc}

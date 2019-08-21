@@ -2,7 +2,7 @@
 layout: post
 title: 盛最多水的容器算法
 categories: Algorithm
-tags: [Algorithm]
+tags: Algorithm
 ---
 * content
 {:toc}

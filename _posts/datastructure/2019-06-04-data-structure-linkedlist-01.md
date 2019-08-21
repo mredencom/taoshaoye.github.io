@@ -2,7 +2,7 @@
 layout: post
 title: 数据结构-链表操作-单向链表
 categories: DataStructure
-tags: [DataStructure]
+tags: DataStructure
 ---
 * content
 {:toc}
