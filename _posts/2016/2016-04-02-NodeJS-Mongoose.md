@@ -2,7 +2,7 @@
 layout: post
 title: NodeJS Mongoose
 categories: NodeJS
-tags: [nodejs]
+tags: nodejs
 ---
 * content
 {:toc}

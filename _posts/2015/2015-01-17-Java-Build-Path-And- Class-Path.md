@@ -2,7 +2,7 @@
 layout: post
 title: Build Path and Class Path
 categories: java
-tags: [java]
+tags: java
 ---
 * content
 {:toc}

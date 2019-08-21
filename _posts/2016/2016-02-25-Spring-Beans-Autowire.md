@@ -2,7 +2,7 @@
 layout: post
 title: Spring Beans Autowire
 categories: Spring
-tags: [spring]
+tags: spring
 ---
 
 * content

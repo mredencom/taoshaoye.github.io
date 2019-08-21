@@ -2,7 +2,7 @@
 layout: post
 title: Java Static Blocks Loading Order
 categories: java
-tags: [java]
+tags: java
 ---
 * content
 {:toc}

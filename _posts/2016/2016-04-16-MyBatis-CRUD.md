@@ -2,7 +2,7 @@
 layout: post
 title: MyBatis config and CRUD
 categories: MyBatis
-tags: [mybatis]
+tags: mybatis
 ---
 * content
 {:toc}

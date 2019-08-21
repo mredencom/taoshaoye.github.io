@@ -2,7 +2,7 @@
 layout: post
 title: Struts OGNL
 categories: Struts
-tags: [struts]
+tags: struts
 ---
 * content
 {:toc}

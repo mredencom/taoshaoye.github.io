@@ -2,7 +2,7 @@
 layout: post
 title: AngularJS Form
 categories: AngularJS
-tags: [angularjs]
+tags: angularjs
 ---
 * content
 {:toc}

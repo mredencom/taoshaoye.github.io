@@ -2,7 +2,7 @@
 layout: post
 title: Android Object Animator
 categories: android
-tags: [android]
+tags: android
 ---
 * content
 {:toc}

@@ -2,7 +2,7 @@
 layout: post
 title: Spring SpEL
 categories: Spring
-tags: [spring]
+tags: spring
 ---
 * content
 {:toc}

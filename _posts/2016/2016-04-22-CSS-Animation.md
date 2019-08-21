@@ -2,7 +2,7 @@
 layout: post
 title: CSS Animation
 categories: CSS
-tags: [css]
+tags: css
 ---
 * content
 {:toc}

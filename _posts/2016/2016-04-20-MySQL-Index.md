@@ -2,7 +2,7 @@
 layout: post
 title: MySQL Index
 categories: MySQL
-tags: [mysql]
+tags: mysql
 ---
 * content
 {:toc}

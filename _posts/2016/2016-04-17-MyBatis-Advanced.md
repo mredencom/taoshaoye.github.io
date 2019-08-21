@@ -2,7 +2,7 @@
 layout: post
 title: MyBatis association collection and discriminator
 categories: MyBatis
-tags: [mybatis]
+tags: mybatis
 ---
 * content
 {:toc}

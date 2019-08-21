@@ -2,7 +2,7 @@
 layout: post
 title: Struts errors and messages from action
 categories: Struts
-tags: [struts]
+tags: struts
 ---
 * content
 {:toc}

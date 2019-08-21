@@ -2,7 +2,7 @@
 layout: post
 title: MyBatis with Spring
 categories: MyBatis
-tags: [mybatis, spring]
+tags: mybatis spring
 ---
 * content
 {:toc}

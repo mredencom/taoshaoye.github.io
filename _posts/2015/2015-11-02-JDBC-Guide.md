@@ -2,7 +2,7 @@
 layout: post
 title: JDBC Guide
 categories: jdbc
-tags: [java, jdbc]
+tags: java jdbc
 ---
 * content
 {:toc}

@@ -2,7 +2,7 @@
 layout: post
 title: Singleton Pattern
 categories: design pattern
-tags: [java, design pattern]
+tags: java design pattern
 ---
 * content
 {:toc}

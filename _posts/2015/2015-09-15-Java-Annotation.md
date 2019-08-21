@@ -2,7 +2,7 @@
 layout: post
 title: Java Annotation
 categories: java
-tags: [java]
+tags: java
 ---
 * content
 {:toc}

@@ -2,7 +2,7 @@
 layout: post
 title: Hibernate Session
 categories: Hibernate
-tags: [hibernate]
+tags: hibernate
 ---
 * content
 {:toc}
