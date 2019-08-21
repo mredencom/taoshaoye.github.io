@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android Fragment
-category: android
+categories: android
 tags: [android]
 ---
 * content

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MyBatis association collection and discriminator
-category: MyBatis
+categories: MyBatis
 tags: [mybatis]
 ---
 * content

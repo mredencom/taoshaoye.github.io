@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java Annotation
-category: java
+categories: java
 tags: [java]
 ---
 * content

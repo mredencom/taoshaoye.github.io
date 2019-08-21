@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SpringMVC RequestMapping
-category: SpringMVC
+categories: SpringMVC
 tags: [spring, springmvc]
 ---
 * content

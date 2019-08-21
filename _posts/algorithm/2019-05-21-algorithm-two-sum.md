@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 两数之和算法
-category: Algorithm
+categories: Algorithm
 tags: [Algorithm]
 ---
 * content

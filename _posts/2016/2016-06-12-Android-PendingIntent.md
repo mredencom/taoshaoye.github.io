@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android PendingIntent
-category: android
+categories: android
 tags: [android]
 ---
 * content

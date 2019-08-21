@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MyBatis with Spring
-category: MyBatis
+categories: MyBatis
 tags: [mybatis, spring]
 ---
 * content

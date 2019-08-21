@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MySQL Index
-category: MySQL
+categories: MySQL
 tags: [mysql]
 ---
 * content

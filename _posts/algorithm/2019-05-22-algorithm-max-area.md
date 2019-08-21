@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 盛最多水的容器算法
-category: Algorithm
+categories: Algorithm
 tags: [Algorithm]
 ---
 * content

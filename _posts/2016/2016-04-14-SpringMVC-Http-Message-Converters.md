@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SpringMVC Http Message Converters
-category: SpringMVC
+categories: SpringMVC
 tags: [spring, springmvc]
 ---
 * content

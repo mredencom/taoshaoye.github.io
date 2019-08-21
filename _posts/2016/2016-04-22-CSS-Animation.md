@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS Animation
-category: CSS
+categories: CSS
 tags: [css]
 ---
 * content

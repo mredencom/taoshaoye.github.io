@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android GestureDetector
-category: android
+categories: android
 tags: [android]
 ---
 * content

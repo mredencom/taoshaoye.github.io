@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Singleton Pattern
-category: design pattern
+categories: design pattern
 tags: [java, design pattern]
 ---
 * content

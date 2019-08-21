@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android Shape Drawable
-category: android
+categories: android
 tags: [android]
 ---
 * content

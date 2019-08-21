@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android Toolbar
-category: android
+categories: android
 tags: [android]
 ---
 * content
@@ -125,7 +125,7 @@ Button will appear directly in toolbar or in overflow menu according to:
     <!-- in overflow menu -->
     <item
         android:id="@+id/item_b"
-        android:orderInCategory="100"
+        android:orderIncategories="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
 

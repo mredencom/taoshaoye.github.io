@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NodeJS Mongoose
-category: NodeJS
+categories: NodeJS
 tags: [nodejs]
 ---
 * content

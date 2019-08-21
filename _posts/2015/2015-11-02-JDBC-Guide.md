@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JDBC Guide
-category: jdbc
+categories: jdbc
 tags: [java, jdbc]
 ---
 * content

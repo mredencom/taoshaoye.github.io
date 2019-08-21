@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MyBatis config and CRUD
-category: MyBatis
+categories: MyBatis
 tags: [mybatis]
 ---
 * content

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java Static Blocks Loading Order
-category: java
+categories: java
 tags: [java]
 ---
 * content

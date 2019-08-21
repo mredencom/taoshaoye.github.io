@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Activity 启动模式
-category: android
+categories: android
 tags: [android]
 ---
 * content

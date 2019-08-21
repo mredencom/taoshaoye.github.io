@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Handler 小结
-category: android
+categories: android
 tags: [android]
 ---
 * content

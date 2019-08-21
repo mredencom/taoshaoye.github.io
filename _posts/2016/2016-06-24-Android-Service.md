@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Service 学习笔记
-category: android
+categories: android
 tags: [android]
 ---
 * content
