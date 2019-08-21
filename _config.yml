@@ -44,6 +44,7 @@ kramdown:
 
 # Disque
 disque: mreden.disqus.com
+disqus_shortname: mreden.disqus.com
 
 #gitment
 comment_gitment_owner: mreden@163.com
