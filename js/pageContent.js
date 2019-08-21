@@ -20,7 +20,6 @@
 
             // 页面底部滚进去的距离
             var htmlHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight)
-                // console.log(htmlHeight);
             var scrollBottom = htmlHeight - window.innerHeight - scrollTop
 
             if (scrollTop < 53) {
