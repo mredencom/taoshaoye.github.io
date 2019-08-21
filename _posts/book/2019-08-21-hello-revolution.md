@@ -11,7 +11,7 @@ tags: golang
 
 在创世纪章节中我们简单介绍了Go语言的演化基因族谱，对其中来自于贝尔实验室的特有并发编程基因做了重点介绍，最后引出了Go语言版的“Hello, World”程序。其实“Hello, World”程序是展示各种语言特性的最好的例子，是通向该语言的一个窗口。这一节我们将沿着各个编程语言演化的时间轴，简单回顾下“Hello, World”程序是如何逐步演化到目前的Go语言形式、最终完成它的革命使命的。
 
-![](../images/ch1-4-go-history.png)
+![](https://www.goroutine.me/assets/images/ch1-4-go-history.png)
 
 *图 1-4 Go语言并发演化历史*
 
@@ -93,19 +93,19 @@ Newsqueak是Rob Pike发明的老鼠语言的第二代，是他用于实践CSP并
 
 Newsqueak类似脚本语言，内置了一个`print`函数，它的“Hello World”程序看不出什么特色：
 
-```go
+```golang
 print("Hello,", "World", "\n");
 ```
 
 从上面的程序中，除了猜测`print`函数可以支持多个参数外，我们很难看到Newsqueak语言相关的特性。由于Newsqueak语言和Go语言相关的特性主要是并发和管道。因此，我们这里通过一个并发版本的“素数筛”算法来略窥Newsqueak语言的特性。“素数筛”的原理如图：
 
-![](../images/ch1-5-prime-sieve.png)
+![](https://www.goroutine.me/assets/images/ch1-5-prime-sieve.png)
 
 *图 1-5 素数筛*
 
 Newsqueak语言并发版本的“素数筛”程序如下：
 
-```go
+```golang
 // 向管道输出从2开始的自然数序列
 counter := prog(c:chan of int) {
 	i := 2;
@@ -159,7 +159,7 @@ Newsqueak语言中并发体和管道的语法和Go语言已经比较接近了，
 
 由于Alef语言同时支持进程和线程并发体，而且在并发体中可以再次启动更多的并发体，导致了Alef的并发状态会异常复杂。同时Alef没有自动垃圾回收机制（Alef因为保留的C语言灵活的指针特性，也导致了自动垃圾回收机制实现比较困难），各种资源充斥于不同的线程和进程之间，导致并发体的内存资源管理异常复杂。Alef语言全部继承了C语言的语法，可以认为是增强了并发语法的C语言。下图是Alef语言文档中展示的一个可能的并发体状态：
 
-![](../images/ch1-6-alef.png)
+![](https://www.goroutine.me/assets/images/ch1-6-alef.png)
 
 *图 1-6 Alef并发模型*
 
@@ -197,7 +197,7 @@ Limbo（地狱）是用于开发运行在小型计算机上的分布式应用的
 
 Limbo语言版本的“Hello World”程序如下：
 
-```go
+```golang
 implement Hello;
 
 include "sys.m"; sys: Sys;
@@ -223,7 +223,7 @@ init(ctxt: ref Draw->Context, args: list of string)
 
 ### 1.2.6.1 hello.go - 2008年6月
 
-```go
+```golang
 package main
 
 func main() int {
@@ -236,7 +236,7 @@ func main() int {
 
 ### 1.2.6.2 hello.go - 2008年6月27日
 
-```go
+```golang
 package main
 
 func main() {
@@ -248,7 +248,7 @@ func main() {
 
 ### 1.2.6.3 hello.go - 2008年8月11日
 
-```go
+```golang
 package main
 
 func main() {
@@ -260,7 +260,7 @@ func main() {
 
 ### 1.2.6.4 hello.go - 2008年10月24日
 
-```go
+```golang
 package main
 
 import "fmt"
@@ -274,7 +274,7 @@ func main() {
 
 ### 1.2.6.5 hello.go - 2009年1月15日
 
-```go
+```golang
 package main
 
 import "fmt"
@@ -288,7 +288,7 @@ Go语言开始采用是否大小写首字母来区分符号是否可以被导出
 
 ### 1.2.6.7 hello.go - 2009年12月11日
 
-```go
+```golang
 package main
 
 import "fmt"
@@ -305,7 +305,7 @@ Go语言终于移除了语句末尾的分号。这是Go语言在2009年11月10�
 
 在经过半个世纪的涅槃重生之后，Go语言不仅仅打印出了Unicode版本的“Hello, World”，而且可以方便地向全球用户提供打印服务。下面版本通过`http`服务向每个访问的客户端打印中文的“你好, 世界!”和当前的时间信息。
 
-```go
+```golang
 package main
 
 import (
@@ -331,3 +331,5 @@ func main() {
 我们通过Go语言标准库自带的`net/http`包构造了一个独立运行的http服务。其中`http.HandleFunc("/", ...)`针对`/`根路径请求注册了响应处理函数。在响应处理函数中，我们依然使用`fmt.Fprintf`格式化输出函数实现了通过http协议向请求的客户端打印格式化的字符串，同时通过标准库的日志包在服务器端也打印相关字符串。最后通过`http.ListenAndServe`函数调用来启动http服务。
 
 至此，Go语言终于完成了从单机单核时代的C语言到21世纪互联网时代多核环境的通用编程语言的蜕变。
+
+`感谢Go语言圣经`这个只为记录学习！！！
