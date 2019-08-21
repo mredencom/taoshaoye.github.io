@@ -17,7 +17,7 @@ description: This is personnel website of Goroutine
 favicon: favicon.png # Image must be in assets/images
 
 url: https://www.goroutine.me # the base hostname & protocol for your site
-
+permalink: /:year/:month/:day/:title/
 ## Gem
 gems:
   - jekyll-paginate
