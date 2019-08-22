@@ -11,13 +11,13 @@ tags: mysql
 
 先看以下例子假设在员工表(emp)的(ENAME, JOB, MGR)三个字段上建了一个索引，例如索引名叫IDX_1。三个字段分别为员工姓名、工作和所属经理号。然后，写如下一个查询语句，并不断进行查询条件和次序的排列组合，例如：
 ```sql
-Select * from emp where ENAME=’a’ and JOB=’b’ and MGR=3;
-Select * from emp where JOB=’b’ and MGR=3 and ENAME=’a’;
-Select * from emp where JOB=’b’ and ENAME=’a’ and MGR=3;
-Select * from emp where JOB=’b’ and MGR=3;
-Select * from emp where ENAME=’a’ and MGR=3;
-Select * from emp where ENAME=’a’;
-Select * from emp where JOB=’b’;
+Select * from emp where ENAME='a' and JOB='b' and MGR=3;
+Select * from emp where JOB='b' and MGR=3 and ENAME='a';
+Select * from emp where JOB='b' and ENAME='a' and MGR=3;
+Select * from emp where JOB='b' and MGR=3;
+Select * from emp where ENAME='a' and MGR=3;
+Select * from emp where ENAME='a';
+Select * from emp where JOB='b';
 Select * from emp where MGR=3;
 ```
 在各种条件组合情况下，刚才建的索引(IDX_1)是用还是不用？也就是说对emp表的访问是全表扫描和还是按索引(IDX_1)访问？
@@ -72,4 +72,4 @@ select user_name from user where age  = ‘30’
 
 2.执行计划，在不同的场景我们根据条件选择不同最`优索引查询策略`
 
-### 此篇文章完(๑′ᴗ‵๑)Ｉ Lᵒᵛᵉᵧₒᵤ❤
+### 5.此篇文章完(๑′ᴗ‵๑)Ｉ Lᵒᵛᵉᵧₒᵤ❤
