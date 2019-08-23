@@ -11,9 +11,6 @@ tags: golang
 
 [![Build Status](https://travis-ci.org/developer-learning/learning-golang.svg?branch=master)](https://travis-ci.org/developer-learning/learning-golang) [![Go Report Card](https://goreportcard.com/badge/github.com/developer-learning/learning-golang)](https://goreportcard.com/report/github.com/developer-learning/learning-golang)  [![Documentation](https://godoc.org/github.com/developer-learning/learning-golang?status.svg)](http://godoc.org/github.com/developer-learning/learning-golang) [![Coverage Status](https://coveralls.io/repos/github/developer-learning/learning-golang/badge.svg?branch=master)](https://coveralls.io/github/developer-learning/learning-golang?branch=master) [![GitHub issues](https://img.shields.io/github/issues/developer-learning/learning-golang.svg?label=Issue)](https://github.com/developer-learning/learning-golang/issues) [![license](https://img.shields.io/github/license/developer-learning/learning-golang.svg?maxAge=2592000)](https://github.com/developer-learning/learning-golang/LICENSE) [![Release](https://img.shields.io/github/release/developer-learning/learning-golang.svg?label=Release)](https://github.com/developer-learning/learning-golang/releases)
 
-Go 学习之路将会不断更新维护，如果有推荐的博客、微信公众号、学习资料，可以提交 Issue。
-
-=======
 **注意：《Go 学习之路》转载：[https://github.com/developer-learning/learning-golang](https://github.com/developer-learning/learning-golang)。`转载为了学习`**
 
 ## Stargazers over time
