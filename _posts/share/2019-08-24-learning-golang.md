@@ -1,6 +1,6 @@
 ---
 layout: post
-title: mysql索引优化注意这两项
+title: golang学习资料分享
 categories: golang
 tags: golang
 ---
