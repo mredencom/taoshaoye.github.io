@@ -7,6 +7,10 @@ tags: golang
 * content
 {:toc}
 
+# 清爽一夏
+
+![](https://images.unsplash.com/photo-1548365327-ba68b3991b34?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80)
+
 # 1.3 数组、字符串和切片
 
 在主流的编程语言中数组及其相关的数据结构是使用得最为频繁的，只有在它(们)不能满足时才会考虑链表、hash表（hash表可以看作是数组和链表的混合体）和更复杂的自定义数据结构。
