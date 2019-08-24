@@ -2,7 +2,7 @@
 layout: post
 title: 数组、字符串和切片
 categories: golang
-tags: golang
+tags: golang book
 ---
 * content
 {:toc}

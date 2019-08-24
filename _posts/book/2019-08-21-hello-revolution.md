@@ -2,7 +2,7 @@
 layout: post
 title: Hello, World 的革命
 categories: golang
-tags: golang
+tags: golang book
 ---
 * content
 {:toc}

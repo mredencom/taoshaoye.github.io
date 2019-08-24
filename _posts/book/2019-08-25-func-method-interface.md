@@ -2,7 +2,7 @@
 layout: post
 title: 函数、方法和接口
 categories: golang
-tags: golang
+tags: golang book
 ---
 
 * content
