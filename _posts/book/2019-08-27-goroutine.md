@@ -44,7 +44,7 @@ func main() {
 
 下面是修复后的代码：
 
-```go
+```golang
 func main() {
 	var mu sync.Mutex
 
@@ -62,7 +62,7 @@ func main() {
 
 使用`sync.Mutex`互斥锁同步是比较低级的做法。我们现在改用无缓存的管道来实现同步：
 
-```go
+```golang
 func main() {
 	done := make(chan int)
 
@@ -79,7 +79,7 @@ func main() {
 
 上面的代码虽然可以正确同步，但是对管道的缓存大小太敏感：如果管道有缓存的话，就无法保证main退出之前后台线程能正常打印了。更好的做法是将管道的发送和接收方向调换一下，这样可以避免同步事件受管道缓存大小的影响：
 
-```go
+```golang
 func main() {
 	done := make(chan int, 1) // 带缓存的管道
 
@@ -96,7 +96,7 @@ func main() {
 
 基于带缓存的管道，我们可以很容易将打印线程扩展到N个。下面的例子是开启10个后台线程分别打印：
 
-```go
+```golang
 func main() {
 	done := make(chan int, 10) // 带 10 个缓存
 
@@ -117,7 +117,7 @@ func main() {
 
 对于这种要等待N个线程完成后再进行下一步的同步操作有一个简单的做法，就是使用`sync.WaitGroup`来等待一组事件：
 
-```go
+```golang
 func main() {
 	var wg sync.WaitGroup
 
@@ -144,7 +144,7 @@ func main() {
 
 Go语言实现生产者消费者并发很简单：
 
-```go
+```golang
 // 生产者: 生成 factor 整数倍的序列
 func Producer(factor int, out chan<- int) {
 	for i := 0; ; i++ {
@@ -174,7 +174,7 @@ func main() {
 
 我们可以让`main`函数保存阻塞状态不退出，只有当用户输入`Ctrl-C`时才真正退出程序：
 
-```go
+```golang
 func main() {
 	ch := make(chan int, 64) // 成果队列
 
@@ -197,7 +197,7 @@ func main() {
 
 为此，我们构建了一个名为`pubsub`的发布订阅模型支持包：
 
-```go
+```golang
 // Package pubsub implements a simple multi-topic pub-sub library.
 package pubsub
 
@@ -293,7 +293,7 @@ func (p *Publisher) sendTopic(
 
 下面的例子中，有两个订阅者分别订阅了全部主题和含有"golang"的主题：
 
-```go
+```golang
 import "path/to/pubsub"
 
 func main() {
@@ -336,7 +336,7 @@ func main() {
 
 在Go语言自带的godoc程序实现中有一个`vfs`的包对应虚拟的文件系统，在`vfs`包下面有一个`gatefs`的子包，`gatefs`子包的目的就是为了控制访问该虚拟文件系统的最大并发数。`gatefs`包的应用很简单：
 
-```go
+```golang
 import (
 	"golang.org/x/tools/godoc/vfs"
 	"golang.org/x/tools/godoc/vfs/gatefs"
@@ -350,7 +350,7 @@ func main() {
 
 其中`vfs.OS("/path")`基于本地文件系统构造一个虚拟的文件系统，然后`gatefs.New`基于现有的虚拟文件系统构造一个并发受控的虚拟文件系统。并发数控制的原理在前面一节已经讲过，就是通过带缓存管道的发送和接收规则来实现最大并发阻塞：
 
-```go
+```golang
 var limit = make(chan int, 3)
 
 func main() {
@@ -368,7 +368,7 @@ func main() {
 
 不过`gatefs`对此做一个抽象类型`gate`，增加了`enter`和`leave`方法分别对应并发代码的进入和离开。当超出并发数目限制的时候，`enter`方法会阻塞直到并发数降下来为止。
 
-```go
+```golang
 type gate chan bool
 
 func (g gate) enter() { g <- true }
@@ -378,7 +378,7 @@ func (g gate) leave() { <-g }
 `gatefs`包装的新的虚拟文件系统就是将需要控制并发的方法增加了`enter`和`leave`调用而已：
 
 
-```go
+```golang
 type gatefs struct {
 	fs vfs.FileSystem
 	gate
@@ -400,7 +400,7 @@ func (fs gatefs) Lstat(p string) (os.FileInfo, error) {
 
 假设我们想快速地搜索“golang”相关的主题，我们可能会同时打开Bing、Google或百度等多个检索引擎。当某个搜索最先返回结果后，就可以关闭其它搜索页面了。因为受网络环境和搜索引擎算法的影响，某些搜索引擎可能很快返回搜索结果，某些搜索引擎也可能等到他们公司倒闭也没有完成搜索。我们可以采用类似的策略来编写这个程序：
 
-```go
+```golang
 func main() {
 	ch := make(chan string, 32)
 
@@ -434,7 +434,7 @@ func main() {
 
 我们需要先生成最初的`2, 3, 4, ...`自然数序列（不包含开头的0、1）：
 
-```go
+```golang
 // 返回生成自然数序列的管道: 2, 3, 4, ...
 func GenerateNatural() chan int {
 	ch := make(chan int)
@@ -451,7 +451,7 @@ func GenerateNatural() chan int {
 
 然后是为每个素数构造一个筛子：将输入序列中是素数倍数的数提出，并返回新的序列，是一个新的管道。
 
-```go
+```golang
 // 管道过滤器: 删除能被素数整除的数
 func PrimeFilter(in <-chan int, prime int) chan int {
 	out := make(chan int)
@@ -470,7 +470,7 @@ func PrimeFilter(in <-chan int, prime int) chan int {
 
 现在我们可以在`main`函数中驱动这个并发的素数筛了：
 
-```go
+```golang
 func main() {
 	ch := GenerateNatural() // 自然数序列: 2, 3, 4, ...
 	for i := 0; i < 100; i++ {
@@ -493,7 +493,7 @@ Go语言中不同Goroutine之间主要依靠管道进行通信和同步。要同
 
 基于`select`实现的管道的超时判断：
 
-```go
+```golang
 select {
 case v := <-in:
 	fmt.Println(v)
@@ -504,7 +504,7 @@ case <-time.After(time.Second):
 
 通过`select`的`default`分支实现非阻塞的管道发送或接收操作：
 
-```go
+```golang
 select {
 case v := <-in:
 	fmt.Println(v)
@@ -515,7 +515,7 @@ default:
 
 通过`select`来阻止`main`函数退出：
 
-```go
+```golang
 func main() {
 	// do some thins
 	select{}
@@ -524,7 +524,7 @@ func main() {
 
 当有多个管道均可操作时，`select`会随机选择一个管道。基于该特性我们可以用`select`实现一个生成随机数序列的程序：
 
-```go
+```golang
 func main() {
 	ch := make(chan int)
 	go func() {
@@ -544,7 +544,7 @@ func main() {
 
 我们通过`select`和`default`分支可以很容易实现一个Goroutine的退出控制:
 
-```go
+```golang
 func worker(cannel chan bool) {
 	for {
 		select {
@@ -568,7 +568,7 @@ func main() {
 
 但是管道的发送操作和接收操作是一一对应的，如果要停止多个Goroutine那么可能需要创建同样数量的管道，这个代价太大了。其实我们可以通过`close`关闭一个管道来实现广播的效果，所有从关闭管道接收的操作均会收到一个零值和一个可选的失败标志。
 
-```go
+```golang
 func worker(cannel chan bool) {
 	for {
 		select {
@@ -595,7 +595,7 @@ func main() {
 
 我们通过`close`来关闭`cancel`管道向多个Goroutine广播退出的指令。不过这个程序依然不够稳健：当每个Goroutine收到退出指令退出时一般会进行一定的清理工作，但是退出的清理工作并不能保证被完成，因为`main`线程并没有等待各个工作Goroutine退出工作完成的机制。我们可以结合`sync.WaitGroup`来改进:
 
-```go
+```golang
 func worker(wg *sync.WaitGroup, cannel chan bool) {
 	defer wg.Done()
 
@@ -631,7 +631,7 @@ func main() {
 
 在Go1.7发布时，标准库增加了一个`context`包，用来简化对于处理单个请求的多个Goroutine之间与请求域的数据、超时和退出等操作，官方有博文对此做了专门介绍。我们可以用`context`包来重新实现前面的线程安全退出或超时的控制:
 
-```go
+```golang
 func worker(ctx context.Context, wg *sync.WaitGroup) error {
 	defer wg.Done()
 
@@ -665,7 +665,7 @@ func main() {
 
 Go语言是带内存自动回收特性的，因此内存一般不会泄漏。在前面素数筛的例子中，`GenerateNatural`和`PrimeFilter`函数内部都启动了新的Goroutine，当`main`函数不再使用管道时后台Goroutine有泄漏的风险。我们可以通过`context`包来避免这个问题，下面是改进的素数筛实现：
 
-```go
+```golang
 // 返回生成自然数序列的管道: 2, 3, 4, ...
 func GenerateNatural(ctx context.Context) chan int {
 	ch := make(chan int)
