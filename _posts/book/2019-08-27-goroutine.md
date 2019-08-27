@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Go语言创世纪
+title: golang常见的并发模式
 categories: golang
 tags: golang book
 ---
@@ -427,7 +427,7 @@ func main() {
 
 在“Hello world 的革命”一节中，我们为了演示Newsqueak的并发特性，文中给出了并发版本素数筛的实现。并发版本的素数筛是一个经典的并发例子，通过它我们可以更深刻地理解Go语言的并发特性。“素数筛”的原理如图：
 
-![](../images/ch1-13-prime-sieve.png)
+![](https://www.goroutine.me/assets/images/ch1-13-prime-sieve.png)
 
 *图 1-13 素数筛*
 
