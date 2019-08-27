@@ -30,12 +30,10 @@ Go语言最吸引人的地方是它内建的并发支持。Go语言并发体系�
 ```golang
 func main() {
 	var mu sync.Mutex
-
 	go func(){
 		fmt.Println("你好, 世界")
 		mu.Lock()
 	}()
-
 	mu.Unlock()
 }
 ```
@@ -47,13 +45,11 @@ func main() {
 ```golang
 func main() {
 	var mu sync.Mutex
-
 	mu.Lock()
 	go func(){
 		fmt.Println("你好, 世界")
 		mu.Unlock()
 	}()
-
 	mu.Lock()
 }
 ```
@@ -65,12 +61,10 @@ func main() {
 ```golang
 func main() {
 	done := make(chan int)
-
 	go func(){
 		fmt.Println("你好, 世界")
 		<-done
 	}()
-
 	done <- 1
 }
 ```
@@ -82,12 +76,10 @@ func main() {
 ```golang
 func main() {
 	done := make(chan int, 1) // 带缓存的管道
-
 	go func(){
 		fmt.Println("你好, 世界")
 		done <- 1
 	}()
-
 	<-done
 }
 ```
@@ -99,7 +91,6 @@ func main() {
 ```golang
 func main() {
 	done := make(chan int, 10) // 带 10 个缓存
-
 	// 开N个后台打印线程
 	for i := 0; i < cap(done); i++ {
 		go func(){
@@ -107,7 +98,6 @@ func main() {
 			done <- 1
 		}()
 	}
-
 	// 等待N个后台线程完成
 	for i := 0; i < cap(done); i++ {
 		<-done
@@ -120,7 +110,6 @@ func main() {
 ```golang
 func main() {
 	var wg sync.WaitGroup
-
 	// 开N个后台打印线程
 	for i := 0; i < 10; i++ {
 		wg.Add(1)
@@ -130,7 +119,6 @@ func main() {
 			wg.Done()
 		}()
 	}
-
 	// 等待N个后台线程完成
 	wg.Wait()
 }
@@ -158,13 +146,12 @@ func Consumer(in <-chan int) {
 		fmt.Println(v)
 	}
 }
+
 func main() {
 	ch := make(chan int, 64) // 成果队列
-
 	go Producer(3, ch) // 生成 3 的倍数的序列
 	go Producer(5, ch) // 生成 5 的倍数的序列
 	go Consumer(ch)    // 消费 生成的队列
-
 	// 运行一定时间后退出
 	time.Sleep(5 * time.Second)
 }
@@ -177,11 +164,9 @@ func main() {
 ```golang
 func main() {
 	ch := make(chan int, 64) // 成果队列
-
 	go Producer(3, ch) // 生成 3 的倍数的序列
 	go Producer(5, ch) // 生成 5 的倍数的序列
 	go Consumer(ch)    // 消费 生成的队列
-
 	// Ctrl+C 退出
 	sig := make(chan os.Signal, 1)
 	signal.Notify(sig, syscall.SIGINT, syscall.SIGTERM)
@@ -246,7 +231,6 @@ func (p *Publisher) SubscribeTopic(topic topicFunc) chan interface{} {
 func (p *Publisher) Evict(sub chan interface{}) {
 	p.m.Lock()
 	defer p.m.Unlock()
-
 	delete(p.subscribers, sub)
 	close(sub)
 }
@@ -255,7 +239,6 @@ func (p *Publisher) Evict(sub chan interface{}) {
 func (p *Publisher) Publish(v interface{}) {
 	p.m.RLock()
 	defer p.m.RUnlock()
-
 	var wg sync.WaitGroup
 	for sub, topic := range p.subscribers {
 		wg.Add(1)
@@ -283,7 +266,6 @@ func (p *Publisher) sendTopic(
 	if topic != nil && !topic(v) {
 		return
 	}
-
 	select {
 	case sub <- v:
 	case <-time.After(p.timeout):
