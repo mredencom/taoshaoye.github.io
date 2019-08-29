@@ -18,6 +18,9 @@ type: page
 * GitHub：[selfjt](https://github.com/selfjt)
 * email：mreden@163.com
 
+## 老博客地址
+
+[Mreden的博客](https://blog.csdn.net/u011816231)
 
 ## 友情链接
 
