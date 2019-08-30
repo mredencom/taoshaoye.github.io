@@ -10,6 +10,18 @@ type: page
     <div class="left">
         <h1>{{page.title}}</h1>
         <hr>
+        <!-- 文章中广告 -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-5784279524799575"
+                 data-ad-slot="9425148475"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        <!-- 文章中广告end -->
         {% capture tags %}
           {% for tag in site.tags %}
             {{ tag[0] }}
