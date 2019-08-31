@@ -97,6 +97,17 @@ layout: default
                     <li><a href="#comments">Comments</a></li>
                 </ul>
             </div>
+            <div class="side" style="margin-top: 12px;">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    {% for post in site.posts offset: 0 limit: 5  %}
+                        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
             <!-- 其他div框放到这里 -->
             <div class="side" style="margin-top: 12px;">
                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
