@@ -1,3 +1,12 @@
+---
+layout: post
+title: golang错误和异常
+categories: golang
+tags: golang book
+---
+* content
+{:toc}
+
 # 1.7 错误和异常
 
 错误处理是每个编程语言都要考虑的一个重要话题。在Go语言的错误处理中，错误是软件包API和应用程序用户界面的一个重要组成部分。
@@ -6,7 +15,7 @@
 
 排除异常的情况，如果程序运行失败仅被认为是几个预期的结果之一。对于那些将运行失败看作是预期结果的函数，它们会返回一个额外的返回值，通常是最后一个来传递错误信息。如果导致失败的原因只有一个，额外的返回值可以是一个布尔值，通常被命名为ok。比如，当从一个`map`查询一个结果时，可以通过额外的布尔值判断是否成功：
 
-```go
+```golang
 if v, ok := m["key"]; ok {
 	return v
 }
@@ -16,7 +25,7 @@ if v, ok := m["key"]; ok {
 
 比如我们通过`syscall`包的接口来修改文件的模式时，如果遇到错误我们可以通过将`err`强制断言为`syscall.Errno`错误类型来处理：
 
-```go
+```golang
 err := syscall.Chmod(":invalid path:", 0666)
 if err != nil {
 	log.Fatal(err.(syscall.Errno))
@@ -29,7 +38,7 @@ if err != nil {
 
 如果某个接口简单地将所有普通的错误当做异常抛出，将会使错误信息杂乱且没有价值。就像在`main`函数中直接捕获全部一样，是没有意义的：
 
-```go
+```golang
 func main() {
 	defer func() {
 		if r := recover(); r != nil {
@@ -37,7 +46,6 @@ func main() {
 		}
 	}()
 
-	...
 }
 ```
 
@@ -47,7 +55,7 @@ func main() {
 
 让我们演示一个文件复制的例子：函数需要打开两个文件，然后将其中一个文件的内容复制到另一个文件：
 
-```go
+```golang
 func CopyFile(dstName, srcName string) (written int64, err error) {
 	src, err := os.Open(srcName)
 	if err != nil {
@@ -68,7 +76,7 @@ func CopyFile(dstName, srcName string) (written int64, err error) {
 
 上面的代码虽然能够工作，但是隐藏一个bug。如果第一个`os.Open`调用成功，但是第二个`os.Create`调用失败，那么会在没有释放`src`文件资源的情况下返回。虽然我们可以通过在第二个返回语句前添加`src.Close()`调用来修复这个BUG；但是当代码变得复杂时，类似的问题将很难被发现和修复。我们可以通过`defer`语句来确保每个被正常打开的文件都能被正常关闭：
 
-```go
+```golang
 func CopyFile(dstName, srcName string) (written int64, err error) {
 	src, err := os.Open(srcName)
 	if err != nil {
@@ -92,7 +100,7 @@ func CopyFile(dstName, srcName string) (written int64, err error) {
 
 让我们以JSON解析器为例，说明recover的使用场景。考虑到JSON解析器的复杂性，即使某个语言解析器目前工作正常，也无法肯定它没有漏洞。因此，当某个异常出现时，我们不会选择让解析器崩溃，而是会将panic异常当作普通的解析错误，并附加额外信息提醒用户报告此错误。
 
-```go
+```golang
 func ParseJSON(input string) (s *Syntax, err error) {
 	defer func() {
 		if p := recover(); p != nil {
@@ -111,7 +119,7 @@ Go语言库的实现习惯: 即使在包内部使用了`panic`，但是在导出
 
 有时候为了方便上层用户理解；底层实现者会将底层的错误重新包装为新的错误类型返回给用户：
 
-```go
+```golang
 if _, err := html.Parse(resp.Body); err != nil {
 	return nil, fmt.Errorf("parsing %s as HTML: %v", url,err)
 }
@@ -123,7 +131,7 @@ if _, err := html.Parse(resp.Body); err != nil {
 
 为此，我们可以定义自己的`github.com/chai2010/errors`包，里面是以下的错误类型：
 
-```go
+```golang
 
 type Error interface {
 	Caller() []CallerInfo
@@ -143,7 +151,7 @@ type CallerInfo struct {
 
 其中`Error`为接口类型，是`error`接口类型的扩展，用于给错误增加调用栈信息，同时支持错误的多级嵌套包装，支持错误码格式。为了使用方便，我们可以定义以下的辅助函数：
 
-```go
+```golang
 func New(msg string) error
 func NewWithCode(code int, msg string) error
 
@@ -158,7 +166,7 @@ func ToJson(err error) string
 
 我们可以这样使用包装函数:
 
-```go
+```golang
 import (
 	"github.com/chai2010/errors"
 )
@@ -168,7 +176,6 @@ func loadConfig() error {
 	if err != nil {
 		return errors.Wrap(err, "read failed")
 	}
-
 	// ...
 }
 
@@ -177,7 +184,6 @@ func setup() error {
 	if err != nil {
 		return errors.Wrap(err, "invalid config")
 	}
-
 	// ...
 }
 
@@ -185,14 +191,13 @@ func main() {
 	if err := setup(); err != nil {
 		log.Fatal(err)
 	}
-
 	// ...
 }
 ```
 
 上面的例子中，错误被进行了2层包装。我们可以这样遍历原始错误经历了哪些包装流程：
 
-```go
+```golang
 	for i, e := range err.(errors.Error).Wraped() {
 		fmt.Printf("wraped(%d): %v\n", i, e)
 	}
@@ -200,7 +205,7 @@ func main() {
 
 同时也可以获取每个包装错误的函数调用堆栈信息：
 
-```go
+```golang
 	for i, x := range err.(errors.Error).Caller() {
 		fmt.Printf("caller:%d: %s\n", i, x.FuncName)
 	}
@@ -208,7 +213,7 @@ func main() {
 
 如果需要将错误通过网络传输，可以用`errors.ToJson(err)`编码为JSON字符串：
 
-```go
+```golang
 // 以JSON字符串方式发送错误
 func sendError(ch chan<- string, err error) {
 	ch <- errors.ToJson(err)
@@ -226,7 +231,7 @@ func recvError(ch <-chan string) error {
 
 对于基于http协议的网络服务，我们还可以给错误绑定一个对应的http状态码：
 
-```go
+```golang
 err := errors.NewWithCode(404, "http error code")
 
 fmt.Println(err)
@@ -235,12 +240,11 @@ fmt.Println(err.(errors.Error).Code())
 
 在Go语言中，错误处理也有一套独特的编码风格。检查某个子函数是否失败后，我们通常将处理失败的逻辑代码放在处理成功的代码之前。如果某个错误会导致函数返回，那么成功时的逻辑代码不应放在`else`语句块中，而应直接放在函数体中。
 
-```go
+```golang
 f, err := os.Open("filename.ext")
 if err != nil {
 	// 失败的情形, 马上返回错误
 }
-
 // 正常的处理流程
 ```
 
@@ -253,7 +257,7 @@ Go语言中的错误是一种接口类型。接口信息中包含了原始类型
 
 在下面的例子中，试图返回自定义的错误类型，当没有错误的时候返回`nil`：
 
-```go
+```golang
 func returnsError() error {
 	var p *MyError = nil
 	if bad() {
@@ -265,7 +269,7 @@ func returnsError() error {
 
 但是，最终返回的结果其实并非是`nil`：是一个正常的错误，错误的值是一个`MyError`类型的空指针。下面是改进的`returnsError`：
 
-```go
+```golang
 func returnsError() error {
 	if bad() {
 		return (*MyError)(err)
@@ -282,7 +286,7 @@ Go语言作为一个强类型语言，不同类型之间必须要显式的转换
 
 `panic`支持抛出任意类型的异常（而不仅仅是`error`类型的错误），`recover`函数调用的返回值和`panic`函数的输入参数类型一致，它们的函数签名如下：
 
-```go
+```golang
 func panic(interface{})
 func recover() interface{}
 ```
@@ -291,7 +295,7 @@ Go语言函数调用的正常流程是函数执行返回语句返回结果，在
 
 在非`defer`语句中执行`recover`调用是初学者常犯的错误:
 
-```go
+```golang
 func main() {
 	if r := recover(); r != nil {
 		log.Fatal(r)
@@ -309,7 +313,7 @@ func main() {
 
 其实`recover`函数调用有着更严格的要求：我们必须在`defer`函数中直接调用`recover`。如果`defer`中调用的是`recover`函数的包装函数的话，异常的捕获工作将失败！比如，有时候我们可能希望包装自己的`MyRecover`函数，在内部增加必要的日志信息然后再调用`recover`，这是错误的做法：
 
-```go
+```golang
 func main() {
 	defer func() {
 		// 无法捕获异常
@@ -328,7 +332,7 @@ func MyRecover() interface{} {
 
 同样，如果是在嵌套的`defer`函数中调用`recover`也将导致无法捕获异常：
 
-```go
+```golang
 func main() {
 	defer func() {
 		defer func() {
@@ -346,7 +350,7 @@ func main() {
 
 如果我们直接在`defer`语句中调用`MyRecover`函数又可以正常工作了：
 
-```go
+```golang
 func MyRecover() interface{} {
 	return recover()
 }
@@ -360,7 +364,7 @@ func main() {
 
 但是，如果`defer`语句直接调用`recover`函数，依然不能正常捕获异常：
 
-```go
+```golang
 func main() {
 	// 无法捕获异常
 	defer recover()
@@ -372,7 +376,7 @@ func main() {
 
 当然，为了避免`recover`调用者不能识别捕获到的异常, 应该避免用`nil`为参数抛出异常:
 
-```go
+```golang
 func main() {
 	defer func() {
 		if r := recover(); r != nil { ... }
@@ -386,7 +390,7 @@ func main() {
 
 当希望将捕获到的异常转为错误时，如果希望忠实返回原始的信息，需要针对不同的类型分别处理：
 
-```go
+```golang
 func foo() (err error) {
 	defer func() {
 		if r := recover(); r != nil {
@@ -407,7 +411,7 @@ func foo() (err error) {
 
 基于这个代码模板，我们甚至可以模拟出不同类型的异常。通过为定义不同类型的保护接口，我们就可以区分异常的类型了：
 
-```go
+```golang
 func main {
 	defer func() {
 		if r := recover(); r != nil {
@@ -427,3 +431,5 @@ func main {
 ```
 
 不过这样做和Go语言简单直接的编程哲学背道而驰了。
+
+`感谢Go语言圣经`这个只为记录学习！！！
