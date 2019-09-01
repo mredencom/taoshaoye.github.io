@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Collections
-permalink: /collection.html
+permalink: /collection
 icon: bookmark
 type: page
 ---
