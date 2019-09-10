@@ -23,13 +23,13 @@ tags: docker
 
 如果使用 `shell` 格式的话，实际的命令会被包装为 `sh -c` 的参数的形式进行执行。比如：
 
-```sh
+```bash
 CMD echo $HOME
 ```
 
 在实际执行中，会将其变更为：
 
-```sh
+```bash
 CMD [ "sh", "-c", "echo $HOME" ]
 ```
 
@@ -41,7 +41,7 @@ Docker 不是虚拟机，容器中的应用都应该以前台执行，而不是�
 
 一些初学者将 `CMD` 写为：
 
-```sh
+```bash
 CMD service nginx start
 ```
 
@@ -53,7 +53,7 @@ CMD service nginx start
 
 正确的做法是直接执行 `nginx` 可执行文件，并且要求以前台形式运行。比如：
 
-```sh
+```bash
 CMD ["nginx", "-g", "daemon off;"]
 ```
 `本文为转载内容，转载为了学习`
