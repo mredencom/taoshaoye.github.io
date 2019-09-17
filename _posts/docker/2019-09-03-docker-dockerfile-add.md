@@ -40,4 +40,4 @@ ADD --chown=bin files* /mydir/
 ADD --chown=1 files* /mydir/
 ADD --chown=10:11 files* /mydir/
 ```
-`本文为转载内容，转载为了学习`
+`本文为转载内容，转载为了记录学习`

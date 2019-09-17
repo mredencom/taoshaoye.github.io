@@ -56,4 +56,4 @@ CMD service nginx start
 ```bash
 CMD ["nginx", "-g", "daemon off;"]
 ```
-`本文为转载内容，转载为了学习`
+`本文为转载内容，转载为了记录学习`

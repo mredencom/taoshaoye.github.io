@@ -28,4 +28,4 @@ docker run -d -v mydata:/data xxxx
 
 在这行命令中，就使用了 `mydata` 这个命名卷挂载到了 `/data` 这个位置，替代了 `Dockerfile` 中定义的匿名卷的挂载配置。
 
-`本文为转载内容，转载为了学习`
+`本文为转载内容，转载为了记录学习`

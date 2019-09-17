@@ -131,4 +131,4 @@ exec "$@"
 $ docker run -it redis id
 uid=0(root) gid=0(root) groups=0(root)
 ```
-`本文为转载内容，转载为了学习`
+`本文为转载内容，转载为了记录学习`

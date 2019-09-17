@@ -41,4 +41,4 @@ COPY --chown=bin files* /mydir/
 COPY --chown=1 files* /mydir/
 COPY --chown=10:11 files* /mydir/
 ```
-`本文为转载内容，转载为了学习`
+`本文为转载内容，转载为了记录学习`
