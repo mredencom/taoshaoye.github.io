@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dockerfile中ARG 构建参数
+title: Dockerfile中VOLUME 定义匿名卷
 categories: docker
 tags: docker
 ---
@@ -8,7 +8,6 @@ tags: docker
 {:toc}
 
 ### VOLUME 定义匿名卷
-
 格式为：
 
 * `VOLUME ["<路径1>", "<路径2>"...]`
