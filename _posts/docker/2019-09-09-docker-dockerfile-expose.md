@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dockerfile中COPY复制文件
+title: Dockerfile中EXPOSE 声明端口
 categories: docker
 tags: docker
 ---
