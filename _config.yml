@@ -9,7 +9,7 @@
 title: Goroutine
 brief-intro: Goroutine
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://goroutine.me" # the base hostname & protocol for your site
+url: "https://www.goroutine.me" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title.html
 
